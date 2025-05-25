@@ -1,0 +1,139 @@
+{
+  "overview": {
+    "total_samples": 100,
+    "average_quality": 0.7155379084967322,
+    "high_quality_samples": 40,
+    "generation_date": "2025-05-25 17:31:41",
+    "models_used": 4,
+    "model_memory_optimization": "All 4 models kept in 24GB GPU memory"
+  },
+  "difficulty_distribution": {
+    "1.0": 100
+  },
+  "constraint_coverage": {},
+  "model_contributions": {
+    "gemma3:1b": {
+      "count": 34,
+      "avg_quality": 0.6291666666666665,
+      "specialty": "creative_storyteller"
+    },
+    "llama3.2:1b": {
+      "count": 33,
+      "avg_quality": 0.7581986531986531,
+      "specialty": "knowledge_synthesizer"
+    },
+    "phi3:3.8b": {
+      "count": 33,
+      "avg_quality": 0.7618657159833632,
+      "specialty": "precision_specialist"
+    }
+  },
+  "quality_metrics": {
+    "min_quality": 0.0,
+    "max_quality": 1.0,
+    "std_quality": 0.2629490086637468,
+    "percentiles": {
+      "25th": 0.6,
+      "50th": 0.7583333333333333,
+      "75th": 0.9166666666666667,
+      "90th": 1.0
+    }
+  },
+  "topic_diversity": {
+    "neural networks": 5,
+    "programming": 4,
+    "APIs": 2,
+    "data structures": 3,
+    "web development": 2,
+    "processes": 3,
+    "algorithms": 1,
+    "software architecture": 2,
+    "data science": 2,
+    "databases": 1,
+    "performance": 5,
+    "sophisticated methods": 3,
+    "advanced algorithms": 3,
+    "security": 3,
+    "best practices": 1,
+    "methodologies": 3,
+    "frameworks": 5,
+    "optimization": 1,
+    "enterprise solutions": 3,
+    "scalability": 2,
+    "design patterns": 1,
+    "code review": 7,
+    "cloud architecture": 3,
+    "optimization strategies": 3,
+    "performance tuning": 4,
+    "security protocols": 1,
+    "software testing": 4,
+    "machine learning pipelines": 2,
+    "microservices": 2,
+    "deployment strategies": 1,
+    "AI architectures": 1,
+    "distributed systems": 2,
+    "system optimization": 3,
+    "distributed computing": 4,
+    "quantum computing applications": 1,
+    "distributed consensus algorithms": 5,
+    "real-time ML inference": 2
+  },
+  "constraint_type_analysis": {
+    "length_precision": {
+      "count": 12,
+      "avg_quality": 0.725
+    },
+    "format_json": {
+      "count": 10,
+      "avg_quality": 0.45999999999999996
+    },
+    "format_markdown": {
+      "count": 3,
+      "avg_quality": 0.7333333333333334
+    },
+    "format_length_combo": {
+      "count": 11,
+      "avg_quality": 0.5166666666666665
+    },
+    "length_forbidden_combo": {
+      "count": 9,
+      "avg_quality": 0.9222222222222223
+    },
+    "format_required_combo": {
+      "count": 10,
+      "avg_quality": 0.795
+    },
+    "comprehensive_markdown": {
+      "count": 12,
+      "avg_quality": 0.8129629629629629
+    },
+    "triple_precision": {
+      "count": 9,
+      "avg_quality": 0.6366666666666667
+    },
+    "advanced_requirements": {
+      "count": 9,
+      "avg_quality": 0.8727668845315903
+    },
+    "expert_comprehensive": {
+      "count": 7,
+      "avg_quality": 0.5578571428571428
+    },
+    "expert_technical_deep_dive": {
+      "count": 8,
+      "avg_quality": 0.859375
+    }
+  },
+  "diversity_analysis": {
+    "distribution_evenness": 0.9999092749840702,
+    "models_used": 3,
+    "most_used_model_percentage": 34.0,
+    "expected_per_model_percentage": 25.0,
+    "round_robin_efficiency": "Good"
+  },
+  "format_validation": {
+    "alpaca_compliant": true,
+    "empty_input_fields": 100,
+    "complete_responses": 99
+  }
+}
