@@ -1,8 +1,3 @@
-"""
-Updated PrecisionTuner - 3 Models Configuration
-Constraint Progression with Round Robin for available models
-"""
-
 import json
 import numpy as np
 from typing import Dict, List, Any, Optional, Tuple
@@ -47,7 +42,7 @@ class SimplifiedMemoryManager:
             return 0
     
     def cleanup_if_needed(self):
-        """Simple cleanup without deleting models"""
+        """cleanup without deleting models"""
         gc.collect()
         try:
             import torch
