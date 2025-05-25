@@ -1,9 +1,3 @@
-"""
-Enhanced Constraint Evaluator Module
-
-Implements evaluation logic for various constraints in generated text with improved accuracy.
-"""
-
 import json
 import re
 from typing import List, Tuple, Dict, Any
@@ -13,7 +7,7 @@ logger = logging.getLogger("PrecisionTuner.ConstraintEvaluator")
 
 
 class ConstraintEvaluator:
-    """Evaluates constraint adherence with detailed scoring and enhanced accuracy"""
+    """Evaluates constraint adherence with detailed scoring and accuracy"""
     
     @staticmethod
     def evaluate_format_constraint(text: str, expected_format: str) -> Tuple[float, str]:
@@ -42,7 +36,7 @@ class ConstraintEvaluator:
     
     @staticmethod
     def _evaluate_json_format(text: str) -> Tuple[float, str]:
-        """Enhanced JSON format evaluation"""
+        """JSON format evaluation"""
         # Remove markdown code blocks if present
         if text.startswith("```json") and text.endswith("```"):
             text = text[7:-3].strip()
@@ -80,7 +74,7 @@ class ConstraintEvaluator:
     
     @staticmethod
     def _evaluate_markdown_format(text: str) -> Tuple[float, str]:
-        """Enhanced Markdown format evaluation"""
+        """Markdown format evaluation"""
         lines = text.split('\n')
         
         # Check for headers
@@ -120,7 +114,7 @@ class ConstraintEvaluator:
     
     @staticmethod
     def _evaluate_list_format(text: str) -> Tuple[float, str]:
-        """Enhanced list format evaluation"""
+        """list format evaluation"""
         lines = text.split('\n')
         
         # Identify different list types
@@ -181,7 +175,7 @@ class ConstraintEvaluator:
     
     @staticmethod 
     def evaluate_length_constraint(text: str, target_length: int, tolerance: int = 10) -> Tuple[float, str]:
-        """Enhanced length evaluation with better word counting"""
+        """length evaluation with better word counting"""
         if not text or not text.strip():
             return 0.0, "Empty response"
         
@@ -225,7 +219,7 @@ class ConstraintEvaluator:
     
     @staticmethod
     def evaluate_forbidden_words(text: str, forbidden_words: List[str]) -> Tuple[float, str]:
-        """Enhanced forbidden word evaluation with better matching"""
+        """forbidden word evaluation with better matching"""
         if not text or not text.strip():
             return 0.0, "Empty response"
         
@@ -273,7 +267,7 @@ class ConstraintEvaluator:
     
     @staticmethod
     def evaluate_required_elements(text: str, required_elements: List[str]) -> Tuple[float, str]:
-        """Enhanced required element evaluation with better matching"""
+        """required element evaluation with better matching"""
         if not text or not text.strip():
             return 0.0, "Empty response"
         
