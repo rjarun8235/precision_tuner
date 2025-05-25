@@ -1,0 +1,1508 @@
+2025-05-25 16:08:45,840 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-25 16:08:46,199 - datasets - INFO - PyTorch version 2.5.1 available.
+2025-05-25 16:08:46,200 - datasets - INFO - TensorFlow version 2.18.0 available.
+2025-05-25 16:08:46,450 - PrecisionTuner.Main - INFO - PRECISIONTUNER: CONSTRAINT PROGRESSION + ROUND-ROBIN
+2025-05-25 16:08:46,450 - PrecisionTuner.Main - INFO - ============================================================
+2025-05-25 16:08:46,450 - PrecisionTuner.Main - INFO - Strategy: Round-robin assignment (sample_index % 5)
+2025-05-25 16:08:46,450 - PrecisionTuner.Main - INFO - Learning: Constraint progression (L1→L2→L3→L4)
+2025-05-25 16:08:46,451 - PrecisionTuner.Main - INFO - L1: Single constraints (length OR format)
+2025-05-25 16:08:46,451 - PrecisionTuner.Main - INFO - L2: Dual constraints (length + forbidden)
+2025-05-25 16:08:46,451 - PrecisionTuner.Main - INFO - L3: Triple constraints (format + length + forbidden)
+2025-05-25 16:08:46,451 - PrecisionTuner.Main - INFO - L4: Expert constraints (all types combined)
+2025-05-25 16:08:46,451 - PrecisionTuner.Main - INFO - Distribution: Exactly 20% per model (guaranteed)
+2025-05-25 16:08:46,451 - PrecisionTuner.Main - INFO - Initializing Constraint Progression PrecisionTuner...
+2025-05-25 16:08:46,458 - PrecisionTuner - INFO - Available models in Ollama:
+2025-05-25 16:08:46,458 - PrecisionTuner - INFO -   ✓ phi3:3.8b
+2025-05-25 16:08:46,458 - PrecisionTuner - INFO -   ✓ llama3.2:1b
+2025-05-25 16:08:46,458 - PrecisionTuner - INFO -   ✓ deepseek-r1:1.5b
+2025-05-25 16:08:46,458 - PrecisionTuner - INFO -   ✓ qwen3:1.7b
+2025-05-25 16:08:46,458 - PrecisionTuner - INFO -   ✓ gemma3:1b
+2025-05-25 16:08:46,458 - PrecisionTuner - INFO -   → gemma3:1b (creative_writing)
+2025-05-25 16:08:46,459 - PrecisionTuner - INFO -   → qwen3:1.7b (technical_precision)
+2025-05-25 16:08:46,459 - PrecisionTuner - INFO -   → deepseek-r1:1.5b (reasoning_logic)
+2025-05-25 16:08:46,459 - PrecisionTuner - INFO -   → llama3.2:1b (general_knowledge)
+2025-05-25 16:08:46,459 - PrecisionTuner - INFO -   → phi3:3.8b (constraint_following)
+2025-05-25 16:08:46,459 - PrecisionTuner - INFO - Initialized with 5 models for round-robin assignment
+2025-05-25 16:08:46,459 - PrecisionTuner.Main - INFO - Model Assignment Preview (first 10 samples):
+2025-05-25 16:08:46,459 - PrecisionTuner.Main - INFO -   Sample 0: gemma3:1b (creative_writing)
+2025-05-25 16:08:46,459 - PrecisionTuner.Main - INFO -   Sample 1: qwen3:1.7b (technical_precision)
+2025-05-25 16:08:46,459 - PrecisionTuner.Main - INFO -   Sample 2: deepseek-r1:1.5b (reasoning_logic)
+2025-05-25 16:08:46,460 - PrecisionTuner.Main - INFO -   Sample 3: llama3.2:1b (general_knowledge)
+2025-05-25 16:08:46,460 - PrecisionTuner.Main - INFO -   Sample 4: phi3:3.8b (constraint_following)
+2025-05-25 16:08:46,460 - PrecisionTuner.Main - INFO -   Sample 5: gemma3:1b (creative_writing)
+2025-05-25 16:08:46,460 - PrecisionTuner.Main - INFO -   Sample 6: qwen3:1.7b (technical_precision)
+2025-05-25 16:08:46,460 - PrecisionTuner.Main - INFO -   Sample 7: deepseek-r1:1.5b (reasoning_logic)
+2025-05-25 16:08:46,460 - PrecisionTuner.Main - INFO -   Sample 8: llama3.2:1b (general_knowledge)
+2025-05-25 16:08:46,460 - PrecisionTuner.Main - INFO -   Sample 9: phi3:3.8b (constraint_following)
+2025-05-25 16:08:46,460 - PrecisionTuner.Main - INFO - Starting constraint progression dataset generation...
+2025-05-25 16:08:46,460 - PrecisionTuner.DatasetGenerator - INFO - CONSTRAINT PROGRESSION DATASET GENERATION
+2025-05-25 16:08:46,460 - PrecisionTuner.DatasetGenerator - INFO - ============================================================
+2025-05-25 16:08:46,460 - PrecisionTuner.DatasetGenerator - INFO - Target size: 100 samples
+2025-05-25 16:08:46,460 - PrecisionTuner.DatasetGenerator - INFO - Assignment: Round-robin (sample_index % 5)
+2025-05-25 16:08:46,460 - PrecisionTuner.DatasetGenerator - INFO - Learning: Experiential constraint progression (L1→L2→L3→L4)
+2025-05-25 16:08:46,460 - PrecisionTuner.DatasetGenerator - INFO - Constraint distribution: {1: 0.25, 2: 0.3, 3: 0.3, 4: 0.15}
+2025-05-25 16:08:46,461 - PrecisionTuner.DatasetGenerator - INFO - Generating 25 samples at constraint level 1
+2025-05-25 16:08:46,461 - PrecisionTuner.DatasetGenerator - INFO - Learning focus: Progressive constraint mastery
+2025-05-25 16:08:46,464 - PrecisionTuner.DatasetGenerator - INFO - Sample 0: gemma3:1b (creative_writing) - Markdown structure and organization
+2025-05-25 16:08:46,464 - PrecisionTuner - INFO - Loading gemma3:1b for creative_writing
+2025-05-25 16:08:49,546 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 16:08:56,106 - PrecisionTuner.DatasetGenerator - INFO - Sample 1: qwen3:1.7b (technical_precision) - Precise length control
+2025-05-25 16:08:56,107 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 16:08:59,483 - PrecisionTuner - INFO - Loading qwen3:1.7b for technical_precision
+2025-05-25 16:09:02,760 - PrecisionTuner - INFO - ✓ qwen3:1.7b loaded successfully
+2025-05-25 16:09:04,687 - PrecisionTuner.DatasetGenerator - INFO - Sample 2: deepseek-r1:1.5b (reasoning_logic) - Structured output formatting
+2025-05-25 16:09:04,688 - PrecisionTuner - INFO - Unloading qwen3:1.7b from memory
+2025-05-25 16:09:05,826 - PrecisionTuner - INFO - Loading deepseek-r1:1.5b for reasoning_logic
+2025-05-25 16:09:08,739 - PrecisionTuner - INFO - ✓ deepseek-r1:1.5b loaded successfully
+2025-05-25 16:09:13,604 - PrecisionTuner.DatasetGenerator - INFO - Sample 3: llama3.2:1b (general_knowledge) - Precise length control
+2025-05-25 16:09:13,604 - PrecisionTuner - INFO - Unloading deepseek-r1:1.5b from memory
+2025-05-25 16:09:14,739 - PrecisionTuner - INFO - Loading llama3.2:1b for general_knowledge
+2025-05-25 16:09:18,858 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 16:09:19,481 - PrecisionTuner.DatasetGenerator - INFO - Sample 4: phi3:3.8b (constraint_following) - Markdown structure and organization
+2025-05-25 16:09:19,482 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 16:09:20,615 - PrecisionTuner - INFO - Loading phi3:3.8b for constraint_following
+2025-05-25 16:09:24,056 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 16:09:29,459 - PrecisionTuner.DatasetGenerator - INFO - Sample 5: gemma3:1b (creative_writing) - Structured output formatting
+2025-05-25 16:09:29,459 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 16:09:30,582 - PrecisionTuner - INFO - Loading gemma3:1b for creative_writing
+2025-05-25 16:09:30,775 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 16:09:37,217 - PrecisionTuner.DatasetGenerator - INFO - Sample 6: qwen3:1.7b (technical_precision) - Structured output formatting
+2025-05-25 16:09:37,217 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 16:09:38,351 - PrecisionTuner - INFO - Loading qwen3:1.7b for technical_precision
+2025-05-25 16:09:42,317 - PrecisionTuner - INFO - ✓ qwen3:1.7b loaded successfully
+2025-05-25 16:09:45,200 - PrecisionTuner.DatasetGenerator - INFO - Sample 7: deepseek-r1:1.5b (reasoning_logic) - Structured output formatting
+2025-05-25 16:09:45,200 - PrecisionTuner - INFO - Unloading qwen3:1.7b from memory
+2025-05-25 16:09:46,336 - PrecisionTuner - INFO - Loading deepseek-r1:1.5b for reasoning_logic
+2025-05-25 16:09:46,444 - PrecisionTuner - INFO - ✓ deepseek-r1:1.5b loaded successfully
+2025-05-25 16:09:52,123 - PrecisionTuner.DatasetGenerator - INFO - Sample 8: llama3.2:1b (general_knowledge) - Structured output formatting
+2025-05-25 16:09:52,124 - PrecisionTuner - INFO - Unloading deepseek-r1:1.5b from memory
+2025-05-25 16:09:53,269 - PrecisionTuner - INFO - Loading llama3.2:1b for general_knowledge
+2025-05-25 16:09:57,339 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 16:10:01,399 - PrecisionTuner.DatasetGenerator - INFO - Sample 9: phi3:3.8b (constraint_following) - Precise length control
+2025-05-25 16:10:01,400 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 16:10:02,543 - PrecisionTuner - INFO - Loading phi3:3.8b for constraint_following
+2025-05-25 16:10:05,844 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 16:10:06,536 - PrecisionTuner.DatasetGenerator - INFO - Sample 10: gemma3:1b (creative_writing) - Precise length control
+2025-05-25 16:10:06,537 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 16:10:07,673 - PrecisionTuner - INFO - Loading gemma3:1b for creative_writing
+2025-05-25 16:10:07,844 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 16:10:08,579 - PrecisionTuner.DatasetGenerator - INFO - Sample 11: qwen3:1.7b (technical_precision) - Precise length control
+2025-05-25 16:10:08,579 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 16:10:09,715 - PrecisionTuner - INFO - Loading qwen3:1.7b for technical_precision
+2025-05-25 16:10:13,395 - PrecisionTuner - INFO - ✓ qwen3:1.7b loaded successfully
+2025-05-25 16:10:14,946 - PrecisionTuner.DatasetGenerator - INFO - Sample 12: deepseek-r1:1.5b (reasoning_logic) - Markdown structure and organization
+2025-05-25 16:10:14,947 - PrecisionTuner - INFO - Unloading qwen3:1.7b from memory
+2025-05-25 16:10:16,085 - PrecisionTuner - INFO - Loading deepseek-r1:1.5b for reasoning_logic
+2025-05-25 16:10:16,186 - PrecisionTuner - INFO - ✓ deepseek-r1:1.5b loaded successfully
+2025-05-25 16:10:21,931 - PrecisionTuner.DatasetGenerator - INFO - Sample 13: llama3.2:1b (general_knowledge) - Structured output formatting
+2025-05-25 16:10:21,932 - PrecisionTuner - INFO - Unloading deepseek-r1:1.5b from memory
+2025-05-25 16:10:23,072 - PrecisionTuner - INFO - Loading llama3.2:1b for general_knowledge
+2025-05-25 16:10:27,121 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 16:10:31,409 - PrecisionTuner.DatasetGenerator - INFO - Sample 14: phi3:3.8b (constraint_following) - Markdown structure and organization
+2025-05-25 16:10:31,410 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 16:10:32,553 - PrecisionTuner - INFO - Loading phi3:3.8b for constraint_following
+2025-05-25 16:10:35,865 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 16:10:41,184 - PrecisionTuner.DatasetGenerator - INFO - Sample 15: gemma3:1b (creative_writing) - Markdown structure and organization
+2025-05-25 16:10:41,184 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 16:10:42,317 - PrecisionTuner - INFO - Loading gemma3:1b for creative_writing
+2025-05-25 16:10:42,474 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 16:10:48,983 - PrecisionTuner.DatasetGenerator - INFO - Sample 16: qwen3:1.7b (technical_precision) - Structured output formatting
+2025-05-25 16:10:48,983 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 16:10:50,118 - PrecisionTuner - INFO - Loading qwen3:1.7b for technical_precision
+2025-05-25 16:10:53,789 - PrecisionTuner - INFO - ✓ qwen3:1.7b loaded successfully
+2025-05-25 16:10:58,157 - PrecisionTuner.DatasetGenerator - INFO - Sample 17: deepseek-r1:1.5b (reasoning_logic) - Markdown structure and organization
+2025-05-25 16:10:58,157 - PrecisionTuner - INFO - Unloading qwen3:1.7b from memory
+2025-05-25 16:10:59,297 - PrecisionTuner - INFO - Loading deepseek-r1:1.5b for reasoning_logic
+2025-05-25 16:10:59,401 - PrecisionTuner - INFO - ✓ deepseek-r1:1.5b loaded successfully
+2025-05-25 16:11:05,123 - PrecisionTuner.DatasetGenerator - INFO - Sample 18: llama3.2:1b (general_knowledge) - Structured output formatting
+2025-05-25 16:11:05,123 - PrecisionTuner - INFO - Unloading deepseek-r1:1.5b from memory
+2025-05-25 16:11:06,255 - PrecisionTuner - INFO - Loading llama3.2:1b for general_knowledge
+2025-05-25 16:11:10,302 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 16:11:12,744 - PrecisionTuner.DatasetGenerator - INFO - Sample 19: phi3:3.8b (constraint_following) - Markdown structure and organization
+2025-05-25 16:11:12,744 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 16:11:13,875 - PrecisionTuner - INFO - Loading phi3:3.8b for constraint_following
+2025-05-25 16:11:17,173 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 16:11:22,319 - PrecisionTuner.DatasetGenerator - INFO - Sample 20: gemma3:1b (creative_writing) - Markdown structure and organization
+2025-05-25 16:11:22,319 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 16:11:23,460 - PrecisionTuner - INFO - Loading gemma3:1b for creative_writing
+2025-05-25 16:11:23,620 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 16:11:30,049 - PrecisionTuner.DatasetGenerator - INFO - Sample 21: qwen3:1.7b (technical_precision) - Precise length control
+2025-05-25 16:11:30,049 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 16:11:31,180 - PrecisionTuner - INFO - Loading qwen3:1.7b for technical_precision
+2025-05-25 16:11:34,872 - PrecisionTuner - INFO - ✓ qwen3:1.7b loaded successfully
+2025-05-25 16:11:36,142 - PrecisionTuner.DatasetGenerator - INFO - Sample 22: deepseek-r1:1.5b (reasoning_logic) - Precise length control
+2025-05-25 16:11:36,142 - PrecisionTuner - INFO - Unloading qwen3:1.7b from memory
+2025-05-25 16:11:37,282 - PrecisionTuner - INFO - Loading deepseek-r1:1.5b for reasoning_logic
+2025-05-25 16:11:37,377 - PrecisionTuner - INFO - ✓ deepseek-r1:1.5b loaded successfully
+2025-05-25 16:11:43,303 - PrecisionTuner.DatasetGenerator - INFO - Sample 23: llama3.2:1b (general_knowledge) - Precise length control
+2025-05-25 16:11:43,303 - PrecisionTuner - INFO - Unloading deepseek-r1:1.5b from memory
+2025-05-25 16:11:44,439 - PrecisionTuner - INFO - Loading llama3.2:1b for general_knowledge
+2025-05-25 16:11:48,462 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 16:11:49,091 - PrecisionTuner.DatasetGenerator - INFO - Sample 24: phi3:3.8b (constraint_following) - Structured output formatting
+2025-05-25 16:11:49,091 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 16:11:50,230 - PrecisionTuner - INFO - Loading phi3:3.8b for constraint_following
+2025-05-25 16:11:53,524 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 16:11:57,395 - PrecisionTuner.DatasetGenerator - INFO - Generating 30 samples at constraint level 2
+2025-05-25 16:11:57,396 - PrecisionTuner.DatasetGenerator - INFO - Learning focus: Progressive constraint mastery
+2025-05-25 16:11:57,397 - PrecisionTuner.DatasetGenerator - INFO - Sample 25: gemma3:1b (creative_writing) - Format precision + length control
+2025-05-25 16:11:57,397 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 16:11:58,537 - PrecisionTuner - INFO - Loading gemma3:1b for creative_writing
+2025-05-25 16:11:58,711 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 16:12:00,264 - PrecisionTuner.DatasetGenerator - INFO - Sample 26: qwen3:1.7b (technical_precision) - Format precision + length control
+2025-05-25 16:12:00,264 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 16:12:01,399 - PrecisionTuner - INFO - Loading qwen3:1.7b for technical_precision
+2025-05-25 16:12:05,113 - PrecisionTuner - INFO - ✓ qwen3:1.7b loaded successfully
+2025-05-25 16:12:09,475 - PrecisionTuner.DatasetGenerator - INFO - Sample 27: deepseek-r1:1.5b (reasoning_logic) - Length control + vocabulary constraints
+2025-05-25 16:12:09,475 - PrecisionTuner - INFO - Unloading qwen3:1.7b from memory
+2025-05-25 16:12:10,615 - PrecisionTuner - INFO - Loading deepseek-r1:1.5b for reasoning_logic
+2025-05-25 16:12:10,720 - PrecisionTuner - INFO - ✓ deepseek-r1:1.5b loaded successfully
+2025-05-25 16:12:16,376 - PrecisionTuner.DatasetGenerator - INFO - Sample 28: llama3.2:1b (general_knowledge) - Format precision + length control
+2025-05-25 16:12:16,376 - PrecisionTuner - INFO - Unloading deepseek-r1:1.5b from memory
+2025-05-25 16:12:17,511 - PrecisionTuner - INFO - Loading llama3.2:1b for general_knowledge
+2025-05-25 16:12:21,581 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 16:12:22,454 - PrecisionTuner.DatasetGenerator - INFO - Sample 29: phi3:3.8b (constraint_following) - Format precision + length control
+2025-05-25 16:12:22,454 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 16:12:23,587 - PrecisionTuner - INFO - Loading phi3:3.8b for constraint_following
+2025-05-25 16:12:26,901 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 16:12:29,286 - PrecisionTuner.DatasetGenerator - INFO - Sample 30: gemma3:1b (creative_writing) - Format structure + required content
+2025-05-25 16:12:29,286 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 16:12:30,406 - PrecisionTuner - INFO - Loading gemma3:1b for creative_writing
+2025-05-25 16:12:30,555 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 16:12:37,184 - PrecisionTuner.DatasetGenerator - INFO - Sample 31: qwen3:1.7b (technical_precision) - Format precision + length control
+2025-05-25 16:12:37,184 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 16:12:38,319 - PrecisionTuner - INFO - Loading qwen3:1.7b for technical_precision
+2025-05-25 16:12:42,030 - PrecisionTuner - INFO - ✓ qwen3:1.7b loaded successfully
+2025-05-25 16:12:44,264 - PrecisionTuner.DatasetGenerator - INFO - Sample 32: deepseek-r1:1.5b (reasoning_logic) - Length control + vocabulary constraints
+2025-05-25 16:12:44,265 - PrecisionTuner - INFO - Unloading qwen3:1.7b from memory
+2025-05-25 16:12:45,408 - PrecisionTuner - INFO - Loading deepseek-r1:1.5b for reasoning_logic
+2025-05-25 16:12:45,514 - PrecisionTuner - INFO - ✓ deepseek-r1:1.5b loaded successfully
+2025-05-25 16:12:49,465 - PrecisionTuner.DatasetGenerator - INFO - Sample 33: llama3.2:1b (general_knowledge) - Length control + vocabulary constraints
+2025-05-25 16:12:49,465 - PrecisionTuner - INFO - Unloading deepseek-r1:1.5b from memory
+2025-05-25 16:12:50,616 - PrecisionTuner - INFO - Loading llama3.2:1b for general_knowledge
+2025-05-25 16:12:54,660 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 16:12:55,242 - PrecisionTuner.DatasetGenerator - INFO - Sample 34: phi3:3.8b (constraint_following) - Length control + vocabulary constraints
+2025-05-25 16:12:55,242 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 16:12:56,378 - PrecisionTuner - INFO - Loading phi3:3.8b for constraint_following
+2025-05-25 16:12:59,542 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 16:13:00,222 - PrecisionTuner.DatasetGenerator - INFO - Sample 35: gemma3:1b (creative_writing) - Length control + vocabulary constraints
+2025-05-25 16:13:00,223 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 16:13:01,359 - PrecisionTuner - INFO - Loading gemma3:1b for creative_writing
+2025-05-25 16:13:01,465 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 16:13:02,230 - PrecisionTuner.DatasetGenerator - INFO - Sample 36: qwen3:1.7b (technical_precision) - Format structure + required content
+2025-05-25 16:13:02,231 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 16:13:03,369 - PrecisionTuner - INFO - Loading qwen3:1.7b for technical_precision
+2025-05-25 16:13:07,015 - PrecisionTuner - INFO - ✓ qwen3:1.7b loaded successfully
+2025-05-25 16:13:11,530 - PrecisionTuner.DatasetGenerator - INFO - Sample 37: deepseek-r1:1.5b (reasoning_logic) - Format precision + length control
+2025-05-25 16:13:11,531 - PrecisionTuner - INFO - Unloading qwen3:1.7b from memory
+2025-05-25 16:13:12,670 - PrecisionTuner - INFO - Loading deepseek-r1:1.5b for reasoning_logic
+2025-05-25 16:13:12,775 - PrecisionTuner - INFO - ✓ deepseek-r1:1.5b loaded successfully
+2025-05-25 16:13:14,838 - PrecisionTuner.DatasetGenerator - INFO - Sample 38: llama3.2:1b (general_knowledge) - Format precision + length control
+2025-05-25 16:13:14,839 - PrecisionTuner - INFO - Unloading deepseek-r1:1.5b from memory
+2025-05-25 16:13:15,977 - PrecisionTuner - INFO - Loading llama3.2:1b for general_knowledge
+2025-05-25 16:13:20,015 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 16:13:21,014 - PrecisionTuner.DatasetGenerator - INFO - Sample 39: phi3:3.8b (constraint_following) - Format precision + length control
+2025-05-25 16:13:21,014 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 16:13:22,134 - PrecisionTuner - INFO - Loading phi3:3.8b for constraint_following
+2025-05-25 16:13:25,484 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 16:13:27,585 - PrecisionTuner.DatasetGenerator - INFO - Sample 40: gemma3:1b (creative_writing) - Length control + vocabulary constraints
+2025-05-25 16:13:27,585 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 16:13:28,722 - PrecisionTuner - INFO - Loading gemma3:1b for creative_writing
+2025-05-25 16:13:28,870 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 16:13:29,752 - PrecisionTuner.DatasetGenerator - INFO - Sample 41: qwen3:1.7b (technical_precision) - Format structure + required content
+2025-05-25 16:13:29,753 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 16:13:30,892 - PrecisionTuner - INFO - Loading qwen3:1.7b for technical_precision
+2025-05-25 16:13:34,830 - PrecisionTuner - INFO - ✓ qwen3:1.7b loaded successfully
+2025-05-25 16:13:39,170 - PrecisionTuner.DatasetGenerator - INFO - Sample 42: deepseek-r1:1.5b (reasoning_logic) - Format precision + length control
+2025-05-25 16:13:39,171 - PrecisionTuner - INFO - Unloading qwen3:1.7b from memory
+2025-05-25 16:13:40,296 - PrecisionTuner - INFO - Loading deepseek-r1:1.5b for reasoning_logic
+2025-05-25 16:13:40,402 - PrecisionTuner - INFO - ✓ deepseek-r1:1.5b loaded successfully
+2025-05-25 16:13:43,197 - PrecisionTuner.DatasetGenerator - INFO - Sample 43: llama3.2:1b (general_knowledge) - Format precision + length control
+2025-05-25 16:13:43,197 - PrecisionTuner - INFO - Unloading deepseek-r1:1.5b from memory
+2025-05-25 16:13:44,340 - PrecisionTuner - INFO - Loading llama3.2:1b for general_knowledge
+2025-05-25 16:13:48,513 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 16:13:49,117 - PrecisionTuner.DatasetGenerator - INFO - Sample 44: phi3:3.8b (constraint_following) - Format structure + required content
+2025-05-25 16:13:49,117 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 16:13:50,251 - PrecisionTuner - INFO - Loading phi3:3.8b for constraint_following
+2025-05-25 16:13:53,590 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 16:13:58,807 - PrecisionTuner.DatasetGenerator - INFO - Sample 45: gemma3:1b (creative_writing) - Format precision + length control
+2025-05-25 16:13:58,807 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 16:13:59,944 - PrecisionTuner - INFO - Loading gemma3:1b for creative_writing
+2025-05-25 16:14:00,101 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 16:14:01,775 - PrecisionTuner.DatasetGenerator - INFO - Sample 46: qwen3:1.7b (technical_precision) - Length control + vocabulary constraints
+2025-05-25 16:14:01,776 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 16:14:02,914 - PrecisionTuner - INFO - Loading qwen3:1.7b for technical_precision
+2025-05-25 16:14:06,624 - PrecisionTuner - INFO - ✓ qwen3:1.7b loaded successfully
+2025-05-25 16:14:09,150 - PrecisionTuner.DatasetGenerator - INFO - Sample 47: deepseek-r1:1.5b (reasoning_logic) - Format structure + required content
+2025-05-25 16:14:09,150 - PrecisionTuner - INFO - Unloading qwen3:1.7b from memory
+2025-05-25 16:14:10,287 - PrecisionTuner - INFO - Loading deepseek-r1:1.5b for reasoning_logic
+2025-05-25 16:14:10,377 - PrecisionTuner - INFO - ✓ deepseek-r1:1.5b loaded successfully
+2025-05-25 16:14:15,885 - PrecisionTuner.DatasetGenerator - INFO - Sample 48: llama3.2:1b (general_knowledge) - Length control + vocabulary constraints
+2025-05-25 16:14:15,885 - PrecisionTuner - INFO - Unloading deepseek-r1:1.5b from memory
+2025-05-25 16:14:17,025 - PrecisionTuner - INFO - Loading llama3.2:1b for general_knowledge
+2025-05-25 16:14:21,095 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 16:14:21,637 - PrecisionTuner.DatasetGenerator - INFO - Sample 49: phi3:3.8b (constraint_following) - Length control + vocabulary constraints
+2025-05-25 16:14:21,637 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 16:14:22,770 - PrecisionTuner - INFO - Loading phi3:3.8b for constraint_following
+2025-05-25 16:14:26,264 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 16:14:27,111 - PrecisionTuner.DatasetGenerator - INFO - Sample 50: gemma3:1b (creative_writing) - Format structure + required content
+2025-05-25 16:14:27,111 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 16:14:28,247 - PrecisionTuner - INFO - Loading gemma3:1b for creative_writing
+2025-05-25 16:14:28,395 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 16:14:34,878 - PrecisionTuner.DatasetGenerator - INFO - Sample 51: qwen3:1.7b (technical_precision) - Length control + vocabulary constraints
+2025-05-25 16:14:34,879 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 16:14:36,025 - PrecisionTuner - INFO - Loading qwen3:1.7b for technical_precision
+2025-05-25 16:14:39,698 - PrecisionTuner - INFO - ✓ qwen3:1.7b loaded successfully
+2025-05-25 16:14:41,646 - PrecisionTuner.DatasetGenerator - INFO - Sample 52: deepseek-r1:1.5b (reasoning_logic) - Format precision + length control
+2025-05-25 16:14:41,647 - PrecisionTuner - INFO - Unloading qwen3:1.7b from memory
+2025-05-25 16:14:42,782 - PrecisionTuner - INFO - Loading deepseek-r1:1.5b for reasoning_logic
+2025-05-25 16:14:42,886 - PrecisionTuner - INFO - ✓ deepseek-r1:1.5b loaded successfully
+2025-05-25 16:14:46,238 - PrecisionTuner.DatasetGenerator - INFO - Sample 53: llama3.2:1b (general_knowledge) - Length control + vocabulary constraints
+2025-05-25 16:14:46,238 - PrecisionTuner - INFO - Unloading deepseek-r1:1.5b from memory
+2025-05-25 16:14:47,359 - PrecisionTuner - INFO - Loading llama3.2:1b for general_knowledge
+2025-05-25 16:14:51,362 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 16:14:51,940 - PrecisionTuner.DatasetGenerator - INFO - Sample 54: phi3:3.8b (constraint_following) - Format precision + length control
+2025-05-25 16:14:51,940 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 16:14:53,076 - PrecisionTuner - INFO - Loading phi3:3.8b for constraint_following
+2025-05-25 16:14:56,411 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 16:14:58,053 - PrecisionTuner.DatasetGenerator - INFO - Generating 30 samples at constraint level 3
+2025-05-25 16:14:58,053 - PrecisionTuner.DatasetGenerator - INFO - Learning focus: Progressive constraint mastery
+2025-05-25 16:14:58,053 - PrecisionTuner.DatasetGenerator - INFO - Sample 55: gemma3:1b (creative_writing) - Format + content depth + vocabulary sophistication
+2025-05-25 16:14:58,054 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 16:14:59,189 - PrecisionTuner - INFO - Loading gemma3:1b for creative_writing
+2025-05-25 16:14:59,344 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 16:15:05,813 - PrecisionTuner.DatasetGenerator - INFO - Sample 56: qwen3:1.7b (technical_precision) - Length + vocabulary + content requirements
+2025-05-25 16:15:05,813 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 16:15:06,960 - PrecisionTuner - INFO - Loading qwen3:1.7b for technical_precision
+2025-05-25 16:15:10,658 - PrecisionTuner - INFO - ✓ qwen3:1.7b loaded successfully
+2025-05-25 16:15:12,523 - PrecisionTuner.DatasetGenerator - INFO - Sample 57: deepseek-r1:1.5b (reasoning_logic) - Format + content depth + vocabulary sophistication
+2025-05-25 16:15:12,524 - PrecisionTuner - INFO - Unloading qwen3:1.7b from memory
+2025-05-25 16:15:13,658 - PrecisionTuner - INFO - Loading deepseek-r1:1.5b for reasoning_logic
+2025-05-25 16:15:13,760 - PrecisionTuner - INFO - ✓ deepseek-r1:1.5b loaded successfully
+2025-05-25 16:15:19,355 - PrecisionTuner.DatasetGenerator - INFO - Sample 58: llama3.2:1b (general_knowledge) - Format + length + vocabulary control
+2025-05-25 16:15:19,355 - PrecisionTuner - INFO - Unloading deepseek-r1:1.5b from memory
+2025-05-25 16:15:20,493 - PrecisionTuner - INFO - Loading llama3.2:1b for general_knowledge
+2025-05-25 16:15:24,526 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 16:15:26,384 - PrecisionTuner.DatasetGenerator - INFO - Sample 59: phi3:3.8b (constraint_following) - Format + length + vocabulary control
+2025-05-25 16:15:26,384 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 16:15:27,525 - PrecisionTuner - INFO - Loading phi3:3.8b for constraint_following
+2025-05-25 16:15:30,790 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 16:15:34,308 - PrecisionTuner.DatasetGenerator - INFO - Sample 60: gemma3:1b (creative_writing) - Format + length + vocabulary control
+2025-05-25 16:15:34,309 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 16:15:35,449 - PrecisionTuner - INFO - Loading gemma3:1b for creative_writing
+2025-05-25 16:15:35,643 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 16:15:37,001 - PrecisionTuner.DatasetGenerator - INFO - Sample 61: qwen3:1.7b (technical_precision) - Format + length + vocabulary control
+2025-05-25 16:15:37,001 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 16:15:38,104 - PrecisionTuner - INFO - Loading qwen3:1.7b for technical_precision
+2025-05-25 16:15:41,749 - PrecisionTuner - INFO - ✓ qwen3:1.7b loaded successfully
+2025-05-25 16:15:45,767 - PrecisionTuner.DatasetGenerator - INFO - Sample 62: deepseek-r1:1.5b (reasoning_logic) - Format + content depth + vocabulary sophistication
+2025-05-25 16:15:45,768 - PrecisionTuner - INFO - Unloading qwen3:1.7b from memory
+2025-05-25 16:15:46,893 - PrecisionTuner - INFO - Loading deepseek-r1:1.5b for reasoning_logic
+2025-05-25 16:15:46,999 - PrecisionTuner - INFO - ✓ deepseek-r1:1.5b loaded successfully
+2025-05-25 16:15:52,631 - PrecisionTuner.DatasetGenerator - INFO - Sample 63: llama3.2:1b (general_knowledge) - Format + content depth + vocabulary sophistication
+2025-05-25 16:15:52,632 - PrecisionTuner - INFO - Unloading deepseek-r1:1.5b from memory
+2025-05-25 16:15:53,771 - PrecisionTuner - INFO - Loading llama3.2:1b for general_knowledge
+2025-05-25 16:15:57,911 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 16:16:02,456 - PrecisionTuner.DatasetGenerator - INFO - Sample 64: phi3:3.8b (constraint_following) - Format + content depth + vocabulary sophistication
+2025-05-25 16:16:02,456 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 16:16:03,596 - PrecisionTuner - INFO - Loading phi3:3.8b for constraint_following
+2025-05-25 16:16:06,938 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 16:16:12,130 - PrecisionTuner.DatasetGenerator - INFO - Sample 65: gemma3:1b (creative_writing) - Length + vocabulary + content requirements
+2025-05-25 16:16:12,131 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 16:16:13,270 - PrecisionTuner - INFO - Loading gemma3:1b for creative_writing
+2025-05-25 16:16:13,429 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 16:16:14,463 - PrecisionTuner.DatasetGenerator - INFO - Sample 66: qwen3:1.7b (technical_precision) - Format + content depth + vocabulary sophistication
+2025-05-25 16:16:14,463 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 16:16:15,598 - PrecisionTuner - INFO - Loading qwen3:1.7b for technical_precision
+2025-05-25 16:16:19,261 - PrecisionTuner - INFO - ✓ qwen3:1.7b loaded successfully
+2025-05-25 16:16:23,602 - PrecisionTuner.DatasetGenerator - INFO - Sample 67: deepseek-r1:1.5b (reasoning_logic) - Format + content depth + vocabulary sophistication
+2025-05-25 16:16:23,602 - PrecisionTuner - INFO - Unloading qwen3:1.7b from memory
+2025-05-25 16:16:24,735 - PrecisionTuner - INFO - Loading deepseek-r1:1.5b for reasoning_logic
+2025-05-25 16:16:24,838 - PrecisionTuner - INFO - ✓ deepseek-r1:1.5b loaded successfully
+2025-05-25 16:16:30,404 - PrecisionTuner.DatasetGenerator - INFO - Sample 68: llama3.2:1b (general_knowledge) - Format + content depth + vocabulary sophistication
+2025-05-25 16:16:30,405 - PrecisionTuner - INFO - Unloading deepseek-r1:1.5b from memory
+2025-05-25 16:16:31,540 - PrecisionTuner - INFO - Loading llama3.2:1b for general_knowledge
+2025-05-25 16:16:35,625 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 16:16:40,178 - PrecisionTuner.DatasetGenerator - INFO - Sample 69: phi3:3.8b (constraint_following) - Format + content depth + vocabulary sophistication
+2025-05-25 16:16:40,178 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 16:16:41,316 - PrecisionTuner - INFO - Loading phi3:3.8b for constraint_following
+2025-05-25 16:16:44,609 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 16:16:49,927 - PrecisionTuner.DatasetGenerator - INFO - Sample 70: gemma3:1b (creative_writing) - Format + content depth + vocabulary sophistication
+2025-05-25 16:16:49,927 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 16:16:51,036 - PrecisionTuner - INFO - Loading gemma3:1b for creative_writing
+2025-05-25 16:16:51,216 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 16:16:57,827 - PrecisionTuner.DatasetGenerator - INFO - Sample 71: qwen3:1.7b (technical_precision) - Format + length + vocabulary control
+2025-05-25 16:16:57,828 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 16:16:58,963 - PrecisionTuner - INFO - Loading qwen3:1.7b for technical_precision
+2025-05-25 16:17:02,636 - PrecisionTuner - INFO - ✓ qwen3:1.7b loaded successfully
+2025-05-25 16:17:06,158 - PrecisionTuner.DatasetGenerator - INFO - Sample 72: deepseek-r1:1.5b (reasoning_logic) - Format + content depth + vocabulary sophistication
+2025-05-25 16:17:06,158 - PrecisionTuner - INFO - Unloading qwen3:1.7b from memory
+2025-05-25 16:17:07,298 - PrecisionTuner - INFO - Loading deepseek-r1:1.5b for reasoning_logic
+2025-05-25 16:17:07,393 - PrecisionTuner - INFO - ✓ deepseek-r1:1.5b loaded successfully
+2025-05-25 16:17:13,047 - PrecisionTuner.DatasetGenerator - INFO - Sample 73: llama3.2:1b (general_knowledge) - Format + content depth + vocabulary sophistication
+2025-05-25 16:17:13,047 - PrecisionTuner - INFO - Unloading deepseek-r1:1.5b from memory
+2025-05-25 16:17:14,169 - PrecisionTuner - INFO - Loading llama3.2:1b for general_knowledge
+2025-05-25 16:17:18,227 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 16:17:22,879 - PrecisionTuner.DatasetGenerator - INFO - Sample 74: phi3:3.8b (constraint_following) - Length + vocabulary + content requirements
+2025-05-25 16:17:22,879 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 16:17:23,999 - PrecisionTuner - INFO - Loading phi3:3.8b for constraint_following
+2025-05-25 16:17:27,301 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 16:17:28,640 - PrecisionTuner.DatasetGenerator - INFO - Sample 75: gemma3:1b (creative_writing) - Format + length + vocabulary control
+2025-05-25 16:17:28,640 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 16:17:29,761 - PrecisionTuner - INFO - Loading gemma3:1b for creative_writing
+2025-05-25 16:17:29,902 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 16:17:31,333 - PrecisionTuner.DatasetGenerator - INFO - Sample 76: qwen3:1.7b (technical_precision) - Format + content depth + vocabulary sophistication
+2025-05-25 16:17:31,333 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 16:17:32,471 - PrecisionTuner - INFO - Loading qwen3:1.7b for technical_precision
+2025-05-25 16:17:36,169 - PrecisionTuner - INFO - ✓ qwen3:1.7b loaded successfully
+2025-05-25 16:17:40,700 - PrecisionTuner.DatasetGenerator - INFO - Sample 77: deepseek-r1:1.5b (reasoning_logic) - Format + length + vocabulary control
+2025-05-25 16:17:40,700 - PrecisionTuner - INFO - Unloading qwen3:1.7b from memory
+2025-05-25 16:17:41,836 - PrecisionTuner - INFO - Loading deepseek-r1:1.5b for reasoning_logic
+2025-05-25 16:17:41,938 - PrecisionTuner - INFO - ✓ deepseek-r1:1.5b loaded successfully
+2025-05-25 16:17:46,399 - PrecisionTuner.DatasetGenerator - INFO - Sample 78: llama3.2:1b (general_knowledge) - Format + length + vocabulary control
+2025-05-25 16:17:46,400 - PrecisionTuner - INFO - Unloading deepseek-r1:1.5b from memory
+2025-05-25 16:17:47,541 - PrecisionTuner - INFO - Loading llama3.2:1b for general_knowledge
+2025-05-25 16:17:51,662 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 16:17:53,722 - PrecisionTuner.DatasetGenerator - INFO - Sample 79: phi3:3.8b (constraint_following) - Format + content depth + vocabulary sophistication
+2025-05-25 16:17:53,722 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 16:17:54,861 - PrecisionTuner - INFO - Loading phi3:3.8b for constraint_following
+2025-05-25 16:17:58,114 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 16:18:03,299 - PrecisionTuner.DatasetGenerator - INFO - Sample 80: gemma3:1b (creative_writing) - Format + length + vocabulary control
+2025-05-25 16:18:03,299 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 16:18:04,444 - PrecisionTuner - INFO - Loading gemma3:1b for creative_writing
+2025-05-25 16:18:04,598 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 16:18:06,531 - PrecisionTuner.DatasetGenerator - INFO - Sample 81: qwen3:1.7b (technical_precision) - Length + vocabulary + content requirements
+2025-05-25 16:18:06,532 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 16:18:07,676 - PrecisionTuner - INFO - Loading qwen3:1.7b for technical_precision
+2025-05-25 16:18:11,343 - PrecisionTuner - INFO - ✓ qwen3:1.7b loaded successfully
+2025-05-25 16:18:13,881 - PrecisionTuner.DatasetGenerator - INFO - Sample 82: deepseek-r1:1.5b (reasoning_logic) - Length + vocabulary + content requirements
+2025-05-25 16:18:13,881 - PrecisionTuner - INFO - Unloading qwen3:1.7b from memory
+2025-05-25 16:18:15,019 - PrecisionTuner - INFO - Loading deepseek-r1:1.5b for reasoning_logic
+2025-05-25 16:18:15,118 - PrecisionTuner - INFO - ✓ deepseek-r1:1.5b loaded successfully
+2025-05-25 16:18:20,293 - PrecisionTuner.DatasetGenerator - INFO - Sample 83: llama3.2:1b (general_knowledge) - Format + length + vocabulary control
+2025-05-25 16:18:20,293 - PrecisionTuner - INFO - Unloading deepseek-r1:1.5b from memory
+2025-05-25 16:18:21,431 - PrecisionTuner - INFO - Loading llama3.2:1b for general_knowledge
+2025-05-25 16:18:25,515 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 16:18:26,982 - PrecisionTuner.DatasetGenerator - INFO - Sample 84: phi3:3.8b (constraint_following) - Length + vocabulary + content requirements
+2025-05-25 16:18:26,982 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 16:18:28,122 - PrecisionTuner - INFO - Loading phi3:3.8b for constraint_following
+2025-05-25 16:18:31,466 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 16:18:33,039 - PrecisionTuner.DatasetGenerator - INFO - Generating 15 samples at constraint level 4
+2025-05-25 16:18:33,040 - PrecisionTuner.DatasetGenerator - INFO - Learning focus: Progressive constraint mastery
+2025-05-25 16:18:33,041 - PrecisionTuner.DatasetGenerator - INFO - Sample 85: gemma3:1b (creative_writing) - Full constraint coordination and mastery
+2025-05-25 16:18:33,041 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 16:18:34,182 - PrecisionTuner - INFO - Loading gemma3:1b for creative_writing
+2025-05-25 16:18:34,344 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 16:18:37,114 - PrecisionTuner.DatasetGenerator - INFO - Sample 86: qwen3:1.7b (technical_precision) - Full constraint coordination and mastery
+2025-05-25 16:18:37,114 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 16:18:38,257 - PrecisionTuner - INFO - Loading qwen3:1.7b for technical_precision
+2025-05-25 16:18:41,951 - PrecisionTuner - INFO - ✓ qwen3:1.7b loaded successfully
+2025-05-25 16:18:46,257 - PrecisionTuner.DatasetGenerator - INFO - Sample 87: deepseek-r1:1.5b (reasoning_logic) - Full constraint coordination and mastery
+2025-05-25 16:18:46,257 - PrecisionTuner - INFO - Unloading qwen3:1.7b from memory
+2025-05-25 16:18:47,398 - PrecisionTuner - INFO - Loading deepseek-r1:1.5b for reasoning_logic
+2025-05-25 16:18:47,497 - PrecisionTuner - INFO - ✓ deepseek-r1:1.5b loaded successfully
+2025-05-25 16:18:53,159 - PrecisionTuner.DatasetGenerator - INFO - Sample 88: llama3.2:1b (general_knowledge) - Full constraint coordination and mastery
+2025-05-25 16:18:53,160 - PrecisionTuner - INFO - Unloading deepseek-r1:1.5b from memory
+2025-05-25 16:18:54,300 - PrecisionTuner - INFO - Loading llama3.2:1b for general_knowledge
+2025-05-25 16:18:58,368 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 16:18:58,766 - PrecisionTuner.DatasetGenerator - INFO - Sample 89: phi3:3.8b (constraint_following) - Maximum constraint complexity with technical depth
+2025-05-25 16:18:58,766 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 16:18:59,903 - PrecisionTuner - INFO - Loading phi3:3.8b for constraint_following
+2025-05-25 16:19:03,225 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 16:19:06,176 - PrecisionTuner.DatasetGenerator - INFO - Sample 90: gemma3:1b (creative_writing) - Full constraint coordination and mastery
+2025-05-25 16:19:06,176 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 16:19:07,316 - PrecisionTuner - INFO - Loading gemma3:1b for creative_writing
+2025-05-25 16:19:07,471 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 16:19:10,378 - PrecisionTuner.DatasetGenerator - INFO - Sample 91: qwen3:1.7b (technical_precision) - Full constraint coordination and mastery
+2025-05-25 16:19:10,378 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 16:19:11,521 - PrecisionTuner - INFO - Loading qwen3:1.7b for technical_precision
+2025-05-25 16:19:15,142 - PrecisionTuner - INFO - ✓ qwen3:1.7b loaded successfully
+2025-05-25 16:19:18,018 - PrecisionTuner.DatasetGenerator - INFO - Sample 92: deepseek-r1:1.5b (reasoning_logic) - Full constraint coordination and mastery
+2025-05-25 16:19:18,019 - PrecisionTuner - INFO - Unloading qwen3:1.7b from memory
+2025-05-25 16:19:19,141 - PrecisionTuner - INFO - Loading deepseek-r1:1.5b for reasoning_logic
+2025-05-25 16:19:19,243 - PrecisionTuner - INFO - ✓ deepseek-r1:1.5b loaded successfully
+2025-05-25 16:19:24,764 - PrecisionTuner.DatasetGenerator - INFO - Sample 93: llama3.2:1b (general_knowledge) - Maximum constraint complexity with technical depth
+2025-05-25 16:19:24,765 - PrecisionTuner - INFO - Unloading deepseek-r1:1.5b from memory
+2025-05-25 16:19:25,902 - PrecisionTuner - INFO - Loading llama3.2:1b for general_knowledge
+2025-05-25 16:19:29,975 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 16:19:31,892 - PrecisionTuner.DatasetGenerator - INFO - Sample 94: phi3:3.8b (constraint_following) - Maximum constraint complexity with technical depth
+2025-05-25 16:19:31,892 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 16:19:33,031 - PrecisionTuner - INFO - Loading phi3:3.8b for constraint_following
+2025-05-25 16:19:36,306 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 16:19:39,242 - PrecisionTuner.DatasetGenerator - INFO - Sample 95: gemma3:1b (creative_writing) - Full constraint coordination and mastery
+2025-05-25 16:19:39,242 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 16:19:40,384 - PrecisionTuner - INFO - Loading gemma3:1b for creative_writing
+2025-05-25 16:19:40,531 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 16:19:43,647 - PrecisionTuner.DatasetGenerator - INFO - Sample 96: qwen3:1.7b (technical_precision) - Full constraint coordination and mastery
+2025-05-25 16:19:43,648 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 16:19:44,786 - PrecisionTuner - INFO - Loading qwen3:1.7b for technical_precision
+2025-05-25 16:19:48,573 - PrecisionTuner - INFO - ✓ qwen3:1.7b loaded successfully
+2025-05-25 16:19:52,909 - PrecisionTuner.DatasetGenerator - INFO - Sample 97: deepseek-r1:1.5b (reasoning_logic) - Maximum constraint complexity with technical depth
+2025-05-25 16:19:52,909 - PrecisionTuner - INFO - Unloading qwen3:1.7b from memory
+2025-05-25 16:19:54,029 - PrecisionTuner - INFO - Loading deepseek-r1:1.5b for reasoning_logic
+2025-05-25 16:19:54,134 - PrecisionTuner - INFO - ✓ deepseek-r1:1.5b loaded successfully
+2025-05-25 16:19:58,294 - PrecisionTuner.DatasetGenerator - INFO - Sample 98: llama3.2:1b (general_knowledge) - Full constraint coordination and mastery
+2025-05-25 16:19:58,294 - PrecisionTuner - INFO - Unloading deepseek-r1:1.5b from memory
+2025-05-25 16:19:59,433 - PrecisionTuner - INFO - Loading llama3.2:1b for general_knowledge
+2025-05-25 16:20:03,580 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 16:20:03,857 - PrecisionTuner.DatasetGenerator - INFO - Sample 99: phi3:3.8b (constraint_following) - Full constraint coordination and mastery
+2025-05-25 16:20:03,858 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 16:20:04,987 - PrecisionTuner - INFO - Loading phi3:3.8b for constraint_following
+2025-05-25 16:20:08,254 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 16:20:11,437 - PrecisionTuner - INFO - Shutting down - preserving all models
+2025-05-25 16:20:11,437 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 16:20:13,709 - PrecisionTuner.DatasetGenerator - INFO - CONSTRAINT PROGRESSION COMPLETE!
+2025-05-25 16:20:13,710 - PrecisionTuner.DatasetGenerator - INFO - ==================================================
+2025-05-25 16:20:13,711 - PrecisionTuner.DatasetGenerator - INFO - Total samples: 100
+2025-05-25 16:20:13,711 - PrecisionTuner.DatasetGenerator - INFO - Average quality: 0.558
+2025-05-25 16:20:13,711 - PrecisionTuner.DatasetGenerator - INFO - Round-Robin Distribution Verification:
+2025-05-25 16:20:13,711 - PrecisionTuner.DatasetGenerator - INFO -   gemma3:1b: 20 samples (expected: 20) - creative_writing
+2025-05-25 16:20:13,712 - PrecisionTuner.DatasetGenerator - INFO -   qwen3:1.7b: 20 samples (expected: 20) - technical_precision
+2025-05-25 16:20:13,712 - PrecisionTuner.DatasetGenerator - INFO -   deepseek-r1:1.5b: 20 samples (expected: 20) - reasoning_logic
+2025-05-25 16:20:13,712 - PrecisionTuner.DatasetGenerator - INFO -   llama3.2:1b: 20 samples (expected: 20) - general_knowledge
+2025-05-25 16:20:13,712 - PrecisionTuner.DatasetGenerator - INFO -   phi3:3.8b: 20 samples (expected: 20) - constraint_following
+2025-05-25 16:20:13,712 - PrecisionTuner.DatasetGenerator - INFO - Constraint Learning Progression:
+2025-05-25 16:20:13,713 - PrecisionTuner.DatasetGenerator - INFO -   L1: Single constraint mastery: 25 samples (25.0%) - avg quality: 0.524
+2025-05-25 16:20:13,713 - PrecisionTuner.DatasetGenerator - INFO -   L2: Dual constraint coordination: 30 samples (30.0%) - avg quality: 0.535
+2025-05-25 16:20:13,713 - PrecisionTuner.DatasetGenerator - INFO -   L3: Triple constraint integration: 30 samples (30.0%) - avg quality: 0.665
+2025-05-25 16:20:13,714 - PrecisionTuner.DatasetGenerator - INFO -   L4: Expert constraint mastery: 15 samples (15.0%) - avg quality: 0.444
+2025-05-25 16:20:13,714 - PrecisionTuner.DatasetGenerator - INFO - Model Specialization Effectiveness:
+2025-05-25 16:20:13,714 - PrecisionTuner.DatasetGenerator - INFO -   gemma3:1b (creative_writing): 20 samples, avg quality: 0.646
+2025-05-25 16:20:13,715 - PrecisionTuner.DatasetGenerator - INFO -   qwen3:1.7b (technical_precision): 20 samples, avg quality: 0.316
+2025-05-25 16:20:13,715 - PrecisionTuner.DatasetGenerator - INFO -   deepseek-r1:1.5b (reasoning_logic): 20 samples, avg quality: 0.384
+2025-05-25 16:20:13,715 - PrecisionTuner.DatasetGenerator - INFO -   llama3.2:1b (general_knowledge): 20 samples, avg quality: 0.632
+2025-05-25 16:20:13,716 - PrecisionTuner.DatasetGenerator - INFO -   phi3:3.8b (constraint_following): 20 samples, avg quality: 0.810
+2025-05-25 16:20:13,716 - PrecisionTuner.DatasetGenerator - INFO - Learning Progression Analysis:
+2025-05-25 16:20:13,716 - PrecisionTuner.DatasetGenerator - INFO -   Level 1 average quality: 0.524
+2025-05-25 16:20:13,717 - PrecisionTuner.DatasetGenerator - INFO -   Level 2 average quality: 0.535
+2025-05-25 16:20:13,717 - PrecisionTuner.DatasetGenerator - INFO -   Level 3 average quality: 0.665
+2025-05-25 16:20:13,717 - PrecisionTuner.DatasetGenerator - INFO -   Level 4 average quality: 0.444
+2025-05-25 16:20:13,717 - PrecisionTuner.DatasetGenerator - INFO -   Overall trend: stable
+2025-05-25 16:20:13,718 - PrecisionTuner.Main - INFO - Saving dataset with constraint progression filtering...
+2025-05-25 16:20:13,718 - PrecisionTuner.DatasetSaver - INFO - Saving PrecisionInstruct Dataset
+2025-05-25 16:20:13,718 - PrecisionTuner.DatasetSaver - INFO - ========================================
+2025-05-25 16:20:13,829 - PrecisionTuner.DatasetSaver - INFO - Hugging Face format saved to: precision_instruct_constraint_progression_100/huggingface_format
+2025-05-25 16:20:13,839 - PrecisionTuner.DatasetSaver - INFO - Raw JSON saved to: precision_instruct_constraint_progression_100/raw_dataset.json
+2025-05-25 16:20:13,843 - PrecisionTuner.DatasetSaver - INFO - Alpaca format saved to: precision_instruct_constraint_progression_100/alpaca_format.json
+2025-05-25 16:20:13,843 - PrecisionTuner.DatasetSaver - INFO - ✓ Alpaca format verified: all samples have empty 'input' field as required
+2025-05-25 16:20:13,852 - PrecisionTuner.DatasetSaver - INFO - Enhanced Alpaca format saved to: precision_instruct_constraint_progression_100/alpaca_enhanced_format.json
+2025-05-25 16:20:13,854 - PrecisionTuner.DatasetSaver - INFO - Statistics saved to: precision_instruct_constraint_progression_100/dataset_statistics.json
+2025-05-25 16:20:13,854 - PrecisionTuner.DatasetSaver - INFO - README.md created: precision_instruct_constraint_progression_100/README.md
+2025-05-25 16:20:13,855 - PrecisionTuner.DatasetSaver - INFO - Validating Alpaca format...
+2025-05-25 16:20:13,855 - PrecisionTuner.DatasetSaver - INFO - ✓ Alpaca format validation passed - all samples correctly formatted
+2025-05-25 16:20:13,855 - PrecisionTuner.DatasetSaver - INFO - ✓ Verified 100 samples with empty 'input' fields
+2025-05-25 16:20:13,855 - PrecisionTuner.Main - INFO - CONSTRAINT PROGRESSION COMPLETE!
+2025-05-25 16:20:13,855 - PrecisionTuner.Main - INFO - ========================================
+2025-05-25 16:20:13,855 - PrecisionTuner.Main - INFO - ✅ Round-robin assignment completed
+2025-05-25 16:20:13,855 - PrecisionTuner.Main - INFO - ✅ Constraint progression implemented (L1→L4)
+2025-05-25 16:20:13,855 - PrecisionTuner.Main - INFO - ✅ Exactly 20% per model distribution
+2025-05-25 16:20:13,855 - PrecisionTuner.Main - INFO - ✅ Filterable by constraint_level column
+2025-05-25 16:20:13,855 - PrecisionTuner.Main - INFO - ✅ Benchmark-based specialties applied
+2025-05-25 16:20:13,856 - PrecisionTuner.Main - INFO - Final Distribution Verification:
+2025-05-25 16:20:13,856 - PrecisionTuner.Main - INFO - Model Distribution:
+2025-05-25 16:20:13,856 - PrecisionTuner.Main - INFO -   gemma3:1b: 20/100 (20.0%)
+2025-05-25 16:20:13,856 - PrecisionTuner.Main - INFO -   qwen3:1.7b: 20/100 (20.0%)
+2025-05-25 16:20:13,856 - PrecisionTuner.Main - INFO -   deepseek-r1:1.5b: 20/100 (20.0%)
+2025-05-25 16:20:13,856 - PrecisionTuner.Main - INFO -   llama3.2:1b: 20/100 (20.0%)
+2025-05-25 16:20:13,856 - PrecisionTuner.Main - INFO -   phi3:3.8b: 20/100 (20.0%)
+2025-05-25 16:20:13,856 - PrecisionTuner.Main - INFO - Constraint Level Distribution:
+2025-05-25 16:20:13,856 - PrecisionTuner.Main - INFO -   L1: Single constraints: 25/100 (25.0%)
+2025-05-25 16:20:13,856 - PrecisionTuner.Main - INFO -   L2: Dual constraints: 30/100 (30.0%)
+2025-05-25 16:20:13,856 - PrecisionTuner.Main - INFO -   L3: Triple constraints: 30/100 (30.0%)
+2025-05-25 16:20:13,856 - PrecisionTuner.Main - INFO -   L4: Expert constraints: 15/100 (15.0%)
+2025-05-25 16:20:13,857 - PrecisionTuner.Main - INFO - Sample with Constraint Progression Metadata:
+2025-05-25 16:20:13,857 - PrecisionTuner.Main - INFO -   Instruction: Create a markdown guide for documentation.
+2025-05-25 16:20:13,857 - PrecisionTuner.Main - INFO -   Constraint Level: 1
+2025-05-25 16:20:13,857 - PrecisionTuner.Main - INFO -   Learning Focus: Markdown structure and organization
+2025-05-25 16:20:13,857 - PrecisionTuner.Main - INFO -   Experiential Progression: L1: Markdown structure and organization
+2025-05-25 16:20:13,857 - PrecisionTuner.Main - INFO -   Model Used: gemma3:1b (creative_writing)
+2025-05-25 16:20:13,857 - PrecisionTuner.Main - INFO -   Sample Index: 0
+2025-05-25 16:20:13,857 - PrecisionTuner.Main - INFO -   Model Assignment Index: 0
+2025-05-25 16:20:13,857 - PrecisionTuner.Main - INFO -   Quality Score: 0.900
+2025-05-25 16:20:13,857 - PrecisionTuner.Main - INFO -   Constraint Count: 1
+2025-05-25 16:20:13,857 - PrecisionTuner.Main - INFO - SUCCESS: 100 samples generated with constraint progression!
+2025-05-25 16:20:13,857 - PrecisionTuner.Main - INFO - Check 'precision_instruct_constraint_progression_100' directory for all files
+2025-05-25 16:20:13,857 - PrecisionTuner.Main - INFO - Round-Robin Assignment Verification:
+2025-05-25 16:20:13,858 - PrecisionTuner.Main - INFO - First 10 assignments (sample_index, assigned_model_index, expected_index):
+2025-05-25 16:20:13,858 - PrecisionTuner.Main - INFO -   Sample 0: assigned=0, expected=0 ✓
+2025-05-25 16:20:13,858 - PrecisionTuner.Main - INFO -   Sample 1: assigned=1, expected=1 ✓
+2025-05-25 16:20:13,858 - PrecisionTuner.Main - INFO -   Sample 2: assigned=2, expected=2 ✓
+2025-05-25 16:20:13,858 - PrecisionTuner.Main - INFO -   Sample 3: assigned=3, expected=3 ✓
+2025-05-25 16:20:13,858 - PrecisionTuner.Main - INFO -   Sample 4: assigned=4, expected=4 ✓
+2025-05-25 16:20:13,858 - PrecisionTuner.Main - INFO -   Sample 5: assigned=0, expected=0 ✓
+2025-05-25 16:20:13,858 - PrecisionTuner.Main - INFO -   Sample 6: assigned=1, expected=1 ✓
+2025-05-25 16:20:13,858 - PrecisionTuner.Main - INFO -   Sample 7: assigned=2, expected=2 ✓
+2025-05-25 16:20:13,858 - PrecisionTuner.Main - INFO -   Sample 8: assigned=3, expected=3 ✓
+2025-05-25 16:20:13,858 - PrecisionTuner.Main - INFO -   Sample 9: assigned=4, expected=4 ✓
+2025-05-25 16:20:13,859 - PrecisionTuner.Main - INFO - ✅ Perfect round-robin assignment - all samples correctly assigned
+2025-05-25 16:20:13,859 - PrecisionTuner.Main - INFO - Constraint Progression Filtering Examples:
+2025-05-25 16:20:13,859 - PrecisionTuner.Main - INFO - L1 (Single constraint) samples: 25
+2025-05-25 16:20:13,859 - PrecisionTuner.Main - INFO -   Example: Create a markdown guide for documentation.
+2025-05-25 16:20:13,859 - PrecisionTuner.Main - INFO -   Learning focus: Markdown structure and organization
+2025-05-25 16:20:13,859 - PrecisionTuner.Main - INFO - L4 (Expert constraint) samples: 15
+2025-05-25 16:20:13,859 - PrecisionTuner.Main - INFO -   Example: Create a comprehensive json analysis of enterprise architecture with exactly 150 words. Avoid: simple, basic, easy, straightforward. Must include: advanced, comprehensive, sophisticated.
+2025-05-25 16:20:13,859 - PrecisionTuner.Main - INFO -   Learning focus: Full constraint coordination and mastery
+2025-05-25 16:20:13,859 - PrecisionTuner.Main - INFO - Length constraint samples: 32
+2025-05-25 16:20:13,859 - PrecisionTuner.Main - INFO - Format constraint samples: 36
+2025-05-25 16:20:13,859 - PrecisionTuner.Main - INFO - Mastery focus samples: 11
+2025-05-25 16:20:13,859 - PrecisionTuner.Main - INFO - Coordination focus samples: 11
+2025-05-25 16:20:13,860 - PrecisionTuner.Main - INFO - Constraint Learning Progression Analysis:
+2025-05-25 16:20:13,860 - PrecisionTuner.Main - INFO - Level 1: 25 samples, avg quality: 0.524
+2025-05-25 16:20:13,860 - PrecisionTuner.Main - INFO -   Constraint types: format_markdown, format_json, length_precision
+2025-05-25 16:20:13,860 - PrecisionTuner.Main - INFO -   Learning focus: Markdown structure and organization
+2025-05-25 16:20:13,860 - PrecisionTuner.Main - INFO -   Constraint count: 1
+2025-05-25 16:20:13,860 - PrecisionTuner.Main - INFO - Level 2: 30 samples, avg quality: 0.535
+2025-05-25 16:20:13,860 - PrecisionTuner.Main - INFO -   Constraint types: format_length_combo, format_required_combo, length_forbidden_combo
+2025-05-25 16:20:13,860 - PrecisionTuner.Main - INFO -   Learning focus: Format precision + length control
+2025-05-25 16:20:13,860 - PrecisionTuner.Main - INFO -   Constraint count: 2
+2025-05-25 16:20:13,860 - PrecisionTuner.Main - INFO - Level 3: 30 samples, avg quality: 0.665
+2025-05-25 16:20:13,860 - PrecisionTuner.Main - INFO -   Constraint types: triple_precision, comprehensive_markdown, advanced_requirements
+2025-05-25 16:20:13,861 - PrecisionTuner.Main - INFO -   Learning focus: Format + content depth + vocabulary sophistication
+2025-05-25 16:20:13,861 - PrecisionTuner.Main - INFO -   Constraint count: 3
+2025-05-25 16:20:13,861 - PrecisionTuner.Main - INFO - Level 4: 15 samples, avg quality: 0.444
+2025-05-25 16:20:13,861 - PrecisionTuner.Main - INFO -   Constraint types: expert_comprehensive, expert_technical_deep_dive
+2025-05-25 16:20:13,861 - PrecisionTuner.Main - INFO -   Learning focus: Full constraint coordination and mastery
+2025-05-25 16:20:13,861 - PrecisionTuner.Main - INFO -   Constraint count: 4
+2025-05-25 16:20:13,861 - PrecisionTuner.Main - INFO - Generated Files:
+2025-05-25 16:20:13,861 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/alpaca_enhanced_format.json
+2025-05-25 16:20:13,862 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/raw_dataset.json
+2025-05-25 16:20:13,862 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/alpaca_format.json
+2025-05-25 16:20:13,862 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/dataset_statistics.json
+2025-05-25 16:20:13,862 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/README.md
+2025-05-25 16:20:13,862 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/dataset_dict.json
+2025-05-25 16:20:13,862 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/train/dataset_info.json
+2025-05-25 16:20:13,862 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/train/data-00000-of-00001.arrow
+2025-05-25 16:20:13,863 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/train/state.json
+2025-05-25 16:20:13,863 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/test/dataset_info.json
+2025-05-25 16:20:13,863 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/test/data-00000-of-00001.arrow
+2025-05-25 16:20:13,863 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/test/state.json
+2025-05-25 16:20:13,863 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/validation/dataset_info.json
+2025-05-25 16:20:13,863 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/validation/data-00000-of-00001.arrow
+2025-05-25 16:20:13,863 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/validation/state.json
+2025-05-25 16:20:13,863 - PrecisionTuner.Main - INFO - 
+Constraint Progression Filtering Examples:
+2025-05-25 16:20:13,864 - PrecisionTuner.Main - INFO - # Filter by constraint level
+2025-05-25 16:20:13,864 - PrecisionTuner.Main - INFO - single_constraints = [s for s in dataset if s['constraint_level'] == 1]
+2025-05-25 16:20:13,864 - PrecisionTuner.Main - INFO - expert_constraints = [s for s in dataset if s['constraint_level'] == 4]
+2025-05-25 16:20:13,864 - PrecisionTuner.Main - INFO - 
+2025-05-25 16:20:13,864 - PrecisionTuner.Main - INFO - # Filter by learning focus
+2025-05-25 16:20:13,864 - PrecisionTuner.Main - INFO - mastery_samples = [s for s in dataset if 'mastery' in s['learning_focus']]
+2025-05-25 16:20:13,864 - PrecisionTuner.Main - INFO - coordination_samples = [s for s in dataset if 'coordination' in s['learning_focus']]
+2025-05-25 16:20:13,864 - PrecisionTuner.Main - INFO - 
+2025-05-25 16:20:13,864 - PrecisionTuner.Main - INFO - # Filter by constraint complexity
+2025-05-25 16:20:13,864 - PrecisionTuner.Main - INFO - simple_constraints = [s for s in dataset if s['constraint_count'] == 1]
+2025-05-25 16:20:13,864 - PrecisionTuner.Main - INFO - complex_constraints = [s for s in dataset if s['constraint_count'] >= 3]
+2025-05-25 17:02:11,375 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-25 17:02:11,737 - datasets - INFO - PyTorch version 2.5.1 available.
+2025-05-25 17:02:11,738 - datasets - INFO - TensorFlow version 2.18.0 available.
+2025-05-25 17:02:11,991 - PrecisionTuner.Main - INFO - PRECISIONTUNER: CONSTRAINT PROGRESSION + ROUND-ROBIN
+2025-05-25 17:02:11,991 - PrecisionTuner.Main - INFO - ============================================================
+2025-05-25 17:02:11,991 - PrecisionTuner.Main - INFO - Strategy: Round-robin assignment (sample_index % 5)
+2025-05-25 17:02:11,991 - PrecisionTuner.Main - INFO - Learning: Constraint progression (L1→L2→L3→L4)
+2025-05-25 17:02:11,991 - PrecisionTuner.Main - INFO - L1: Single constraints (length OR format)
+2025-05-25 17:02:11,991 - PrecisionTuner.Main - INFO - L2: Dual constraints (length + forbidden)
+2025-05-25 17:02:11,992 - PrecisionTuner.Main - INFO - L3: Triple constraints (format + length + forbidden)
+2025-05-25 17:02:11,992 - PrecisionTuner.Main - INFO - L4: Expert constraints (all types combined)
+2025-05-25 17:02:11,992 - PrecisionTuner.Main - INFO - Distribution: Exactly 20% per model (guaranteed)
+2025-05-25 17:02:11,992 - PrecisionTuner.Main - INFO - Initializing Constraint Progression PrecisionTuner...
+2025-05-25 17:02:11,992 - PrecisionTuner - INFO - Total model memory: 8000MB (7.8GB)
+2025-05-25 17:02:11,992 - PrecisionTuner - INFO - GPU memory available: 24GB - plenty of headroom
+2025-05-25 17:02:11,998 - PrecisionTuner - INFO - Available models in Ollama:
+2025-05-25 17:02:11,999 - PrecisionTuner - INFO -   ✓ phi3:3.8b
+2025-05-25 17:02:11,999 - PrecisionTuner - INFO -   ✓ llama3.2:1b
+2025-05-25 17:02:11,999 - PrecisionTuner - INFO -   ✓ qwen3:1.7b
+2025-05-25 17:02:11,999 - PrecisionTuner - INFO -   ✓ gemma3:1b
+2025-05-25 17:02:11,999 - PrecisionTuner - INFO -   → gemma3:1b (creative_writing)
+2025-05-25 17:02:11,999 - PrecisionTuner - INFO -   → qwen3:1.7b (technical_precision)
+2025-05-25 17:02:11,999 - PrecisionTuner - INFO -   → llama3.2:1b (general_knowledge)
+2025-05-25 17:02:11,999 - PrecisionTuner - INFO -   → phi3:3.8b (constraint_following)
+2025-05-25 17:02:11,999 - PrecisionTuner - INFO - Loading all models into GPU memory...
+2025-05-25 17:02:12,000 - PrecisionTuner - INFO - Loading gemma3:1b (creative_writing)
+2025-05-25 17:02:15,047 - PrecisionTuner - INFO -   ✓ gemma3:1b loaded successfully
+2025-05-25 17:02:15,048 - PrecisionTuner - INFO - Loading qwen3:1.7b (technical_precision)
+2025-05-25 17:02:18,222 - PrecisionTuner - INFO -   ✓ qwen3:1.7b loaded successfully
+2025-05-25 17:02:18,222 - PrecisionTuner - INFO - Loading llama3.2:1b (general_knowledge)
+2025-05-25 17:02:21,541 - PrecisionTuner - INFO -   ✓ llama3.2:1b loaded successfully
+2025-05-25 17:02:21,541 - PrecisionTuner - INFO - Loading phi3:3.8b (constraint_following)
+2025-05-25 17:02:24,818 - PrecisionTuner - INFO -   ✓ phi3:3.8b loaded successfully
+2025-05-25 17:02:24,819 - PrecisionTuner - INFO - Model loading complete: 4/4 models ready
+2025-05-25 17:02:24,819 - PrecisionTuner - INFO - All 4 models loaded and ready for round-robin assignment
+2025-05-25 17:02:24,819 - PrecisionTuner.Main - INFO - Model Assignment Preview (first 10 samples):
+2025-05-25 17:02:24,820 - PrecisionTuner.Main - INFO -   Sample 0: gemma3:1b (creative_writing)
+2025-05-25 17:02:24,820 - PrecisionTuner.Main - INFO -   Sample 1: qwen3:1.7b (technical_precision)
+2025-05-25 17:02:24,820 - PrecisionTuner.Main - INFO -   Sample 2: llama3.2:1b (general_knowledge)
+2025-05-25 17:02:24,820 - PrecisionTuner.Main - INFO -   Sample 3: phi3:3.8b (constraint_following)
+2025-05-25 17:02:24,821 - PrecisionTuner.Main - INFO -   Sample 4: gemma3:1b (creative_writing)
+2025-05-25 17:02:24,821 - PrecisionTuner.Main - INFO -   Sample 5: qwen3:1.7b (technical_precision)
+2025-05-25 17:02:24,821 - PrecisionTuner.Main - INFO -   Sample 6: llama3.2:1b (general_knowledge)
+2025-05-25 17:02:24,821 - PrecisionTuner.Main - INFO -   Sample 7: phi3:3.8b (constraint_following)
+2025-05-25 17:02:24,821 - PrecisionTuner.Main - INFO -   Sample 8: gemma3:1b (creative_writing)
+2025-05-25 17:02:24,821 - PrecisionTuner.Main - INFO -   Sample 9: qwen3:1.7b (technical_precision)
+2025-05-25 17:02:24,822 - PrecisionTuner.Main - INFO - Starting constraint progression dataset generation...
+2025-05-25 17:02:24,822 - PrecisionTuner.DatasetGenerator - INFO - 4-MODEL CONSTRAINT PROGRESSION DATASET GENERATION
+2025-05-25 17:02:24,822 - PrecisionTuner.DatasetGenerator - INFO - ============================================================
+2025-05-25 17:02:24,822 - PrecisionTuner.DatasetGenerator - INFO - Target size: 100 samples
+2025-05-25 17:02:24,823 - PrecisionTuner.DatasetGenerator - INFO - Assignment: Round-robin (sample_index % 4)
+2025-05-25 17:02:24,823 - PrecisionTuner.DatasetGenerator - INFO - Memory: All 4 models loaded in 24GB GPU
+2025-05-25 17:02:24,823 - PrecisionTuner.DatasetGenerator - INFO - Learning: Experiential constraint progression (L1→L2→L3→L4)
+2025-05-25 17:02:24,823 - PrecisionTuner.DatasetGenerator - INFO - Constraint distribution: {1: 0.25, 2: 0.3, 3: 0.3, 4: 0.15}
+2025-05-25 17:02:24,823 - PrecisionTuner.DatasetGenerator - INFO - Models: 4 specialized (DeepSeek removed - no reasoning conflicts)
+2025-05-25 17:02:24,824 - PrecisionTuner.DatasetGenerator - INFO - Generating 25 samples at constraint level 1
+2025-05-25 17:02:24,824 - PrecisionTuner.DatasetGenerator - INFO - Round-robin: 4 models (sample_index % 4)
+2025-05-25 17:02:24,824 - PrecisionTuner.DatasetGenerator - INFO - Learning focus: Progressive constraint mastery
+2025-05-25 17:02:24,829 - PrecisionTuner.DatasetGenerator - INFO - Sample 0: gemma3:1b (creative_writing) - Precise length control
+2025-05-25 17:02:25,526 - PrecisionTuner.DatasetGenerator - INFO - Sample 1: qwen3:1.7b (technical_precision) - Markdown structure and organization
+2025-05-25 17:02:33,531 - PrecisionTuner.DatasetGenerator - INFO - Sample 2: llama3.2:1b (general_knowledge) - Markdown structure and organization
+2025-05-25 17:02:38,183 - PrecisionTuner.DatasetGenerator - INFO - Sample 3: phi3:3.8b (constraint_following) - Markdown structure and organization
+2025-05-25 17:02:46,540 - PrecisionTuner.DatasetGenerator - INFO - Sample 4: gemma3:1b (creative_writing) - Structured output formatting
+2025-05-25 17:02:53,104 - PrecisionTuner.DatasetGenerator - INFO - Sample 5: qwen3:1.7b (technical_precision) - Markdown structure and organization
+2025-05-25 17:03:01,028 - PrecisionTuner.DatasetGenerator - INFO - Sample 6: llama3.2:1b (general_knowledge) - Markdown structure and organization
+2025-05-25 17:03:05,201 - PrecisionTuner.DatasetGenerator - INFO - Sample 7: phi3:3.8b (constraint_following) - Precise length control
+2025-05-25 17:03:08,945 - PrecisionTuner.DatasetGenerator - INFO - Sample 8: gemma3:1b (creative_writing) - Structured output formatting
+2025-05-25 17:03:15,444 - PrecisionTuner.DatasetGenerator - INFO - Sample 9: qwen3:1.7b (technical_precision) - Structured output formatting
+2025-05-25 17:03:22,448 - PrecisionTuner.DatasetGenerator - INFO - Sample 10: llama3.2:1b (general_knowledge) - Precise length control
+2025-05-25 17:03:23,037 - PrecisionTuner.DatasetGenerator - INFO - Sample 11: phi3:3.8b (constraint_following) - Precise length control
+2025-05-25 17:03:26,849 - PrecisionTuner.DatasetGenerator - INFO - Sample 12: gemma3:1b (creative_writing) - Markdown structure and organization
+2025-05-25 17:03:33,393 - PrecisionTuner.DatasetGenerator - INFO - Sample 13: qwen3:1.7b (technical_precision) - Precise length control
+2025-05-25 17:03:38,508 - PrecisionTuner.DatasetGenerator - INFO - Sample 14: llama3.2:1b (general_knowledge) - Markdown structure and organization
+2025-05-25 17:03:42,288 - PrecisionTuner.DatasetGenerator - INFO - Sample 15: phi3:3.8b (constraint_following) - Markdown structure and organization
+2025-05-25 17:03:50,677 - PrecisionTuner.DatasetGenerator - INFO - Sample 16: gemma3:1b (creative_writing) - Markdown structure and organization
+2025-05-25 17:03:57,161 - PrecisionTuner.DatasetGenerator - INFO - Sample 17: qwen3:1.7b (technical_precision) - Precise length control
+2025-05-25 17:04:02,514 - PrecisionTuner.DatasetGenerator - INFO - Sample 18: llama3.2:1b (general_knowledge) - Precise length control
+2025-05-25 17:04:03,089 - PrecisionTuner.DatasetGenerator - INFO - Sample 19: phi3:3.8b (constraint_following) - Precise length control
+2025-05-25 17:04:06,905 - PrecisionTuner.DatasetGenerator - INFO - Sample 20: gemma3:1b (creative_writing) - Structured output formatting
+2025-05-25 17:04:13,340 - PrecisionTuner.DatasetGenerator - INFO - Sample 21: qwen3:1.7b (technical_precision) - Structured output formatting
+2025-05-25 17:04:21,423 - PrecisionTuner.DatasetGenerator - INFO - Sample 22: llama3.2:1b (general_knowledge) - Markdown structure and organization
+2025-05-25 17:04:24,312 - PrecisionTuner.DatasetGenerator - INFO - Sample 23: phi3:3.8b (constraint_following) - Precise length control
+2025-05-25 17:04:28,099 - PrecisionTuner.DatasetGenerator - INFO - Sample 24: gemma3:1b (creative_writing) - Markdown structure and organization
+2025-05-25 17:04:34,543 - PrecisionTuner.DatasetGenerator - INFO - Generating 30 samples at constraint level 2
+2025-05-25 17:04:34,543 - PrecisionTuner.DatasetGenerator - INFO - Round-robin: 4 models (sample_index % 4)
+2025-05-25 17:04:34,543 - PrecisionTuner.DatasetGenerator - INFO - Learning focus: Progressive constraint mastery
+2025-05-25 17:04:34,544 - PrecisionTuner.DatasetGenerator - INFO - Sample 25: qwen3:1.7b (technical_precision) - Format precision + length control
+2025-05-25 17:04:40,089 - PrecisionTuner.DatasetGenerator - INFO - Sample 26: llama3.2:1b (general_knowledge) - Format structure + required content
+2025-05-25 17:04:44,224 - PrecisionTuner.DatasetGenerator - INFO - Sample 27: phi3:3.8b (constraint_following) - Format precision + length control
+2025-05-25 17:04:49,137 - PrecisionTuner.DatasetGenerator - INFO - Sample 28: gemma3:1b (creative_writing) - Format structure + required content
+2025-05-25 17:04:55,376 - PrecisionTuner.DatasetGenerator - INFO - Sample 29: qwen3:1.7b (technical_precision) - Format structure + required content
+2025-05-25 17:05:03,282 - PrecisionTuner.DatasetGenerator - INFO - Sample 30: llama3.2:1b (general_knowledge) - Length control + vocabulary constraints
+2025-05-25 17:05:04,032 - PrecisionTuner.DatasetGenerator - INFO - Sample 31: phi3:3.8b (constraint_following) - Length control + vocabulary constraints
+2025-05-25 17:05:07,904 - PrecisionTuner.DatasetGenerator - INFO - Sample 32: gemma3:1b (creative_writing) - Format precision + length control
+2025-05-25 17:05:09,629 - PrecisionTuner.DatasetGenerator - INFO - Sample 33: qwen3:1.7b (technical_precision) - Format structure + required content
+2025-05-25 17:05:17,630 - PrecisionTuner.DatasetGenerator - INFO - Sample 34: llama3.2:1b (general_knowledge) - Format structure + required content
+2025-05-25 17:05:21,927 - PrecisionTuner.DatasetGenerator - INFO - Sample 35: phi3:3.8b (constraint_following) - Format precision + length control
+2025-05-25 17:05:25,895 - PrecisionTuner.DatasetGenerator - INFO - Sample 36: gemma3:1b (creative_writing) - Format precision + length control
+2025-05-25 17:05:27,608 - PrecisionTuner.DatasetGenerator - INFO - Sample 37: qwen3:1.7b (technical_precision) - Length control + vocabulary constraints
+2025-05-25 17:05:33,772 - PrecisionTuner.DatasetGenerator - INFO - Sample 38: llama3.2:1b (general_knowledge) - Length control + vocabulary constraints
+2025-05-25 17:05:34,309 - PrecisionTuner.DatasetGenerator - INFO - Sample 39: phi3:3.8b (constraint_following) - Format structure + required content
+2025-05-25 17:05:42,648 - PrecisionTuner.DatasetGenerator - INFO - Sample 40: gemma3:1b (creative_writing) - Format precision + length control
+2025-05-25 17:05:44,070 - PrecisionTuner.DatasetGenerator - INFO - Sample 41: qwen3:1.7b (technical_precision) - Format structure + required content
+2025-05-25 17:05:51,897 - PrecisionTuner.DatasetGenerator - INFO - Sample 42: llama3.2:1b (general_knowledge) - Format structure + required content
+2025-05-25 17:05:56,131 - PrecisionTuner.DatasetGenerator - INFO - Sample 43: phi3:3.8b (constraint_following) - Format structure + required content
+2025-05-25 17:06:04,435 - PrecisionTuner.DatasetGenerator - INFO - Sample 44: gemma3:1b (creative_writing) - Length control + vocabulary constraints
+2025-05-25 17:06:05,195 - PrecisionTuner.DatasetGenerator - INFO - Sample 45: qwen3:1.7b (technical_precision) - Format structure + required content
+2025-05-25 17:06:13,589 - PrecisionTuner.DatasetGenerator - INFO - Sample 46: llama3.2:1b (general_knowledge) - Format precision + length control
+2025-05-25 17:06:14,475 - PrecisionTuner.DatasetGenerator - INFO - Sample 47: phi3:3.8b (constraint_following) - Format precision + length control
+2025-05-25 17:06:18,930 - PrecisionTuner.DatasetGenerator - INFO - Sample 48: gemma3:1b (creative_writing) - Format precision + length control
+2025-05-25 17:06:20,296 - PrecisionTuner.DatasetGenerator - INFO - Sample 49: qwen3:1.7b (technical_precision) - Format structure + required content
+2025-05-25 17:06:28,326 - PrecisionTuner.DatasetGenerator - INFO - Sample 50: llama3.2:1b (general_knowledge) - Format structure + required content
+2025-05-25 17:06:30,833 - PrecisionTuner.DatasetGenerator - INFO - Sample 51: phi3:3.8b (constraint_following) - Format precision + length control
+2025-05-25 17:06:34,746 - PrecisionTuner.DatasetGenerator - INFO - Sample 52: gemma3:1b (creative_writing) - Format structure + required content
+2025-05-25 17:06:41,680 - PrecisionTuner.DatasetGenerator - INFO - Sample 53: qwen3:1.7b (technical_precision) - Format precision + length control
+2025-05-25 17:06:48,869 - PrecisionTuner.DatasetGenerator - INFO - Sample 54: llama3.2:1b (general_knowledge) - Length control + vocabulary constraints
+2025-05-25 17:06:49,451 - PrecisionTuner.DatasetGenerator - INFO - Generating 30 samples at constraint level 3
+2025-05-25 17:06:49,451 - PrecisionTuner.DatasetGenerator - INFO - Round-robin: 4 models (sample_index % 4)
+2025-05-25 17:06:49,451 - PrecisionTuner.DatasetGenerator - INFO - Learning focus: Progressive constraint mastery
+2025-05-25 17:06:49,452 - PrecisionTuner.DatasetGenerator - INFO - Sample 55: phi3:3.8b (constraint_following) - Format + length + vocabulary control
+2025-05-25 17:06:56,254 - PrecisionTuner.DatasetGenerator - INFO - Sample 56: gemma3:1b (creative_writing) - Format + content depth + vocabulary sophistication
+2025-05-25 17:07:02,840 - PrecisionTuner.DatasetGenerator - INFO - Sample 57: qwen3:1.7b (technical_precision) - Format + content depth + vocabulary sophistication
+2025-05-25 17:07:10,943 - PrecisionTuner.DatasetGenerator - INFO - Sample 58: llama3.2:1b (general_knowledge) - Length + vocabulary + content requirements
+2025-05-25 17:07:11,775 - PrecisionTuner.DatasetGenerator - INFO - Sample 59: phi3:3.8b (constraint_following) - Format + content depth + vocabulary sophistication
+2025-05-25 17:07:20,296 - PrecisionTuner.DatasetGenerator - INFO - Sample 60: gemma3:1b (creative_writing) - Format + content depth + vocabulary sophistication
+2025-05-25 17:07:26,511 - PrecisionTuner.DatasetGenerator - INFO - Sample 61: qwen3:1.7b (technical_precision) - Format + content depth + vocabulary sophistication
+2025-05-25 17:07:34,440 - PrecisionTuner.DatasetGenerator - INFO - Sample 62: llama3.2:1b (general_knowledge) - Length + vocabulary + content requirements
+2025-05-25 17:07:35,155 - PrecisionTuner.DatasetGenerator - INFO - Sample 63: phi3:3.8b (constraint_following) - Format + length + vocabulary control
+2025-05-25 17:07:41,254 - PrecisionTuner.DatasetGenerator - INFO - Sample 64: gemma3:1b (creative_writing) - Length + vocabulary + content requirements
+2025-05-25 17:07:42,314 - PrecisionTuner.DatasetGenerator - INFO - Sample 65: qwen3:1.7b (technical_precision) - Length + vocabulary + content requirements
+2025-05-25 17:07:47,653 - PrecisionTuner.DatasetGenerator - INFO - Sample 66: llama3.2:1b (general_knowledge) - Format + length + vocabulary control
+2025-05-25 17:07:50,378 - PrecisionTuner.DatasetGenerator - INFO - Sample 67: phi3:3.8b (constraint_following) - Format + length + vocabulary control
+2025-05-25 17:07:57,033 - PrecisionTuner.DatasetGenerator - INFO - Sample 68: gemma3:1b (creative_writing) - Length + vocabulary + content requirements
+2025-05-25 17:07:58,052 - PrecisionTuner.DatasetGenerator - INFO - Sample 69: qwen3:1.7b (technical_precision) - Length + vocabulary + content requirements
+2025-05-25 17:08:03,837 - PrecisionTuner.DatasetGenerator - INFO - Sample 70: llama3.2:1b (general_knowledge) - Length + vocabulary + content requirements
+2025-05-25 17:08:04,576 - PrecisionTuner.DatasetGenerator - INFO - Sample 71: phi3:3.8b (constraint_following) - Format + length + vocabulary control
+2025-05-25 17:08:10,654 - PrecisionTuner.DatasetGenerator - INFO - Sample 72: gemma3:1b (creative_writing) - Length + vocabulary + content requirements
+2025-05-25 17:08:11,773 - PrecisionTuner.DatasetGenerator - INFO - Sample 73: qwen3:1.7b (technical_precision) - Length + vocabulary + content requirements
+2025-05-25 17:08:17,275 - PrecisionTuner.DatasetGenerator - INFO - Sample 74: llama3.2:1b (general_knowledge) - Format + length + vocabulary control
+2025-05-25 17:08:19,954 - PrecisionTuner.DatasetGenerator - INFO - Sample 75: phi3:3.8b (constraint_following) - Format + content depth + vocabulary sophistication
+2025-05-25 17:08:28,437 - PrecisionTuner.DatasetGenerator - INFO - Sample 76: gemma3:1b (creative_writing) - Length + vocabulary + content requirements
+2025-05-25 17:08:29,542 - PrecisionTuner.DatasetGenerator - INFO - Sample 77: qwen3:1.7b (technical_precision) - Format + length + vocabulary control
+2025-05-25 17:08:37,514 - PrecisionTuner.DatasetGenerator - INFO - Sample 78: llama3.2:1b (general_knowledge) - Length + vocabulary + content requirements
+2025-05-25 17:08:38,450 - PrecisionTuner.DatasetGenerator - INFO - Sample 79: phi3:3.8b (constraint_following) - Format + content depth + vocabulary sophistication
+2025-05-25 17:08:46,849 - PrecisionTuner.DatasetGenerator - INFO - Sample 80: gemma3:1b (creative_writing) - Format + content depth + vocabulary sophistication
+2025-05-25 17:08:53,265 - PrecisionTuner.DatasetGenerator - INFO - Sample 81: qwen3:1.7b (technical_precision) - Length + vocabulary + content requirements
+2025-05-25 17:08:58,776 - PrecisionTuner.DatasetGenerator - INFO - Sample 82: llama3.2:1b (general_knowledge) - Format + content depth + vocabulary sophistication
+2025-05-25 17:09:03,296 - PrecisionTuner.DatasetGenerator - INFO - Sample 83: phi3:3.8b (constraint_following) - Format + length + vocabulary control
+2025-05-25 17:09:08,988 - PrecisionTuner.DatasetGenerator - INFO - Sample 84: gemma3:1b (creative_writing) - Format + length + vocabulary control
+2025-05-25 17:09:10,778 - PrecisionTuner.DatasetGenerator - INFO - Generating 15 samples at constraint level 4
+2025-05-25 17:09:10,779 - PrecisionTuner.DatasetGenerator - INFO - Round-robin: 4 models (sample_index % 4)
+2025-05-25 17:09:10,779 - PrecisionTuner.DatasetGenerator - INFO - Learning focus: Progressive constraint mastery
+2025-05-25 17:09:10,780 - PrecisionTuner.DatasetGenerator - INFO - Sample 85: qwen3:1.7b (technical_precision) - Full constraint coordination and mastery
+2025-05-25 17:09:17,341 - PrecisionTuner.DatasetGenerator - INFO - Sample 86: llama3.2:1b (general_knowledge) - Full constraint coordination and mastery
+2025-05-25 17:09:17,625 - PrecisionTuner.DatasetGenerator - INFO - Sample 87: phi3:3.8b (constraint_following) - Maximum constraint complexity with technical depth
+2025-05-25 17:09:24,326 - PrecisionTuner.DatasetGenerator - INFO - Sample 88: gemma3:1b (creative_writing) - Full constraint coordination and mastery
+2025-05-25 17:09:26,917 - PrecisionTuner.DatasetGenerator - INFO - Sample 89: qwen3:1.7b (technical_precision) - Maximum constraint complexity with technical depth
+2025-05-25 17:09:34,001 - PrecisionTuner.DatasetGenerator - INFO - Sample 90: llama3.2:1b (general_knowledge) - Full constraint coordination and mastery
+2025-05-25 17:09:34,243 - PrecisionTuner.DatasetGenerator - INFO - Sample 91: phi3:3.8b (constraint_following) - Full constraint coordination and mastery
+2025-05-25 17:09:40,472 - PrecisionTuner.DatasetGenerator - INFO - Sample 92: gemma3:1b (creative_writing) - Full constraint coordination and mastery
+2025-05-25 17:09:43,479 - PrecisionTuner.DatasetGenerator - INFO - Sample 93: qwen3:1.7b (technical_precision) - Full constraint coordination and mastery
+2025-05-25 17:09:49,368 - PrecisionTuner.DatasetGenerator - INFO - Sample 94: llama3.2:1b (general_knowledge) - Maximum constraint complexity with technical depth
+2025-05-25 17:09:50,581 - PrecisionTuner.DatasetGenerator - INFO - Sample 95: phi3:3.8b (constraint_following) - Maximum constraint complexity with technical depth
+2025-05-25 17:09:55,978 - PrecisionTuner.DatasetGenerator - INFO - Sample 96: gemma3:1b (creative_writing) - Full constraint coordination and mastery
+2025-05-25 17:09:58,896 - PrecisionTuner.DatasetGenerator - INFO - Sample 97: qwen3:1.7b (technical_precision) - Maximum constraint complexity with technical depth
+2025-05-25 17:10:06,920 - PrecisionTuner.DatasetGenerator - INFO - Sample 98: llama3.2:1b (general_knowledge) - Maximum constraint complexity with technical depth
+2025-05-25 17:10:08,341 - PrecisionTuner.DatasetGenerator - INFO - Sample 99: phi3:3.8b (constraint_following) - Full constraint coordination and mastery
+2025-05-25 17:10:16,000 - PrecisionTuner.DatasetGenerator - INFO - Generation complete - all models remain loaded for next run
+2025-05-25 17:10:16,000 - PrecisionTuner.DatasetGenerator - INFO - 4-MODEL CONSTRAINT PROGRESSION COMPLETE!
+2025-05-25 17:10:16,000 - PrecisionTuner.DatasetGenerator - INFO - ==================================================
+2025-05-25 17:10:16,001 - PrecisionTuner.DatasetGenerator - INFO - Total samples: 100
+2025-05-25 17:10:16,001 - PrecisionTuner.DatasetGenerator - INFO - Average quality: 0.679
+2025-05-25 17:10:16,001 - PrecisionTuner.DatasetGenerator - INFO - Memory usage: ~7.2GB (30% of 24GB GPU)
+2025-05-25 17:10:16,001 - PrecisionTuner.DatasetGenerator - INFO - 4-Model Round-Robin Distribution Verification:
+2025-05-25 17:10:16,002 - PrecisionTuner.DatasetGenerator - INFO -   gemma3:1b: 25 samples (25.0%) [expected: 25] - creative_writing
+2025-05-25 17:10:16,002 - PrecisionTuner.DatasetGenerator - INFO -   qwen3:1.7b: 25 samples (25.0%) [expected: 25] - technical_precision
+2025-05-25 17:10:16,002 - PrecisionTuner.DatasetGenerator - INFO -   llama3.2:1b: 25 samples (25.0%) [expected: 25] - general_knowledge
+2025-05-25 17:10:16,002 - PrecisionTuner.DatasetGenerator - INFO -   phi3:3.8b: 25 samples (25.0%) [expected: 25] - constraint_following
+2025-05-25 17:10:16,003 - PrecisionTuner.DatasetGenerator - INFO - Model Specialty Performance Analysis:
+2025-05-25 17:10:16,003 - PrecisionTuner.DatasetGenerator - INFO -   creative_writing: 25 samples, avg quality: 0.571
+2025-05-25 17:10:16,003 - PrecisionTuner.DatasetGenerator - INFO -   technical_precision: 25 samples, avg quality: 0.491
+2025-05-25 17:10:16,004 - PrecisionTuner.DatasetGenerator - INFO -   general_knowledge: 25 samples, avg quality: 0.840
+2025-05-25 17:10:16,004 - PrecisionTuner.DatasetGenerator - INFO -   constraint_following: 25 samples, avg quality: 0.814
+2025-05-25 17:10:16,004 - PrecisionTuner.DatasetGenerator - INFO - Constraint Learning Progression:
+2025-05-25 17:10:16,004 - PrecisionTuner.DatasetGenerator - INFO -   L1: Single constraint mastery: 25 samples (25.0%) - avg quality: 0.676
+2025-05-25 17:10:16,005 - PrecisionTuner.DatasetGenerator - INFO -   L2: Dual constraint coordination: 30 samples (30.0%) - avg quality: 0.705
+2025-05-25 17:10:16,005 - PrecisionTuner.DatasetGenerator - INFO -   L3: Triple constraint integration: 30 samples (30.0%) - avg quality: 0.719
+2025-05-25 17:10:16,005 - PrecisionTuner.DatasetGenerator - INFO -   L4: Expert constraint mastery: 15 samples (15.0%) - avg quality: 0.552
+2025-05-25 17:10:16,006 - PrecisionTuner.DatasetGenerator - INFO - Performance Optimization Results:
+2025-05-25 17:10:16,006 - PrecisionTuner.DatasetGenerator - INFO -   ✓ Zero model switching delays (all pre-loaded)
+2025-05-25 17:10:16,006 - PrecisionTuner.DatasetGenerator - INFO -   ✓ Consistent 7.2GB memory footprint
+2025-05-25 17:10:16,006 - PrecisionTuner.DatasetGenerator - INFO -   ✓ No reasoning conflicts (DeepSeek removed)
+2025-05-25 17:10:16,006 - PrecisionTuner.DatasetGenerator - INFO -   ✓ Perfect round-robin distribution (4 models)
+2025-05-25 17:10:16,007 - PrecisionTuner.DatasetGenerator - INFO - Learning Progression Quality Analysis:
+2025-05-25 17:10:16,007 - PrecisionTuner.DatasetGenerator - INFO -   Level 1 average quality: 0.676
+2025-05-25 17:10:16,007 - PrecisionTuner.DatasetGenerator - INFO -   Level 2 average quality: 0.705
+2025-05-25 17:10:16,008 - PrecisionTuner.DatasetGenerator - INFO -   Level 3 average quality: 0.719
+2025-05-25 17:10:16,008 - PrecisionTuner.DatasetGenerator - INFO -   Level 4 average quality: 0.552
+2025-05-25 17:10:16,008 - PrecisionTuner.DatasetGenerator - INFO -   Overall progression trend: stable
+2025-05-25 17:10:16,008 - PrecisionTuner.Main - INFO - Saving dataset with constraint progression filtering...
+2025-05-25 17:10:16,008 - PrecisionTuner.DatasetSaver - INFO - Saving PrecisionInstruct Dataset
+2025-05-25 17:10:16,008 - PrecisionTuner.DatasetSaver - INFO - ========================================
+2025-05-25 17:10:16,118 - PrecisionTuner.DatasetSaver - INFO - Hugging Face format saved to: precision_instruct_constraint_progression_100/huggingface_format
+2025-05-25 17:10:16,128 - PrecisionTuner.DatasetSaver - INFO - Raw JSON saved to: precision_instruct_constraint_progression_100/raw_dataset.json
+2025-05-25 17:10:16,132 - PrecisionTuner.DatasetSaver - INFO - Alpaca format saved to: precision_instruct_constraint_progression_100/alpaca_format.json
+2025-05-25 17:10:16,140 - PrecisionTuner.DatasetSaver - INFO - CLEAN Enhanced Alpaca format saved to: precision_instruct_constraint_progression_100/alpaca_enhanced_format.json
+2025-05-25 17:10:16,140 - PrecisionTuner.DatasetSaver - INFO - ✓ Enhanced format includes model specialty but NO bias fields
+2025-05-25 17:10:16,143 - PrecisionTuner.DatasetSaver - INFO - Statistics saved to: precision_instruct_constraint_progression_100/dataset_statistics.json
+2025-05-25 17:10:16,143 - PrecisionTuner.DatasetSaver - INFO - README.md created: precision_instruct_constraint_progression_100/README.md
+2025-05-25 17:10:16,143 - PrecisionTuner.DatasetSaver - INFO - Validating Alpaca format...
+2025-05-25 17:10:16,143 - PrecisionTuner.DatasetSaver - INFO - ✓ Alpaca format validation passed - all samples correctly formatted
+2025-05-25 17:10:16,143 - PrecisionTuner.DatasetSaver - INFO - ✓ Verified 100 samples with empty 'input' fields
+2025-05-25 17:10:16,143 - PrecisionTuner.Main - INFO - CONSTRAINT PROGRESSION COMPLETE!
+2025-05-25 17:10:16,144 - PrecisionTuner.Main - INFO - ========================================
+2025-05-25 17:10:16,144 - PrecisionTuner.Main - INFO - ✅ Round-robin assignment completed
+2025-05-25 17:10:16,144 - PrecisionTuner.Main - INFO - ✅ Constraint progression implemented (L1→L4)
+2025-05-25 17:10:16,144 - PrecisionTuner.Main - INFO - ✅ Exactly 20% per model distribution
+2025-05-25 17:10:16,144 - PrecisionTuner.Main - INFO - ✅ Filterable by constraint_level column
+2025-05-25 17:10:16,144 - PrecisionTuner.Main - INFO - ✅ Benchmark-based specialties applied
+2025-05-25 17:10:16,144 - PrecisionTuner.Main - INFO - Final Distribution Verification:
+2025-05-25 17:10:16,144 - PrecisionTuner.Main - INFO - Model Distribution:
+2025-05-25 17:10:16,144 - PrecisionTuner.Main - INFO -   gemma3:1b: 25/100 (25.0%)
+2025-05-25 17:10:16,144 - PrecisionTuner.Main - INFO -   qwen3:1.7b: 25/100 (25.0%)
+2025-05-25 17:10:16,144 - PrecisionTuner.Main - INFO -   llama3.2:1b: 25/100 (25.0%)
+2025-05-25 17:10:16,144 - PrecisionTuner.Main - INFO -   phi3:3.8b: 25/100 (25.0%)
+2025-05-25 17:10:16,145 - PrecisionTuner.Main - INFO - Constraint Level Distribution:
+2025-05-25 17:10:16,145 - PrecisionTuner.Main - INFO -   L1: Single constraints: 25/100 (25.0%)
+2025-05-25 17:10:16,145 - PrecisionTuner.Main - INFO -   L2: Dual constraints: 30/100 (30.0%)
+2025-05-25 17:10:16,145 - PrecisionTuner.Main - INFO -   L3: Triple constraints: 30/100 (30.0%)
+2025-05-25 17:10:16,145 - PrecisionTuner.Main - INFO -   L4: Expert constraints: 15/100 (15.0%)
+2025-05-25 17:10:16,145 - PrecisionTuner.Main - INFO - Sample with Constraint Progression Metadata:
+2025-05-25 17:10:16,145 - PrecisionTuner.Main - INFO -   Instruction: Write about data science in exactly 50 words.
+2025-05-25 17:10:16,145 - PrecisionTuner.Main - INFO -   Constraint Level: 1
+2025-05-25 17:10:16,145 - PrecisionTuner.Main - INFO -   Learning Focus: Precise length control
+2025-05-25 17:10:16,145 - PrecisionTuner.Main - INFO -   Experiential Progression: L1: Precise length control
+2025-05-25 17:10:16,145 - PrecisionTuner.Main - INFO -   Model Used: gemma3:1b (creative_writing)
+2025-05-25 17:10:16,145 - PrecisionTuner.Main - INFO -   Sample Index: 0
+2025-05-25 17:10:16,146 - PrecisionTuner.Main - INFO -   Model Assignment Index: 0
+2025-05-25 17:10:16,146 - PrecisionTuner.Main - INFO -   Quality Score: 0.500
+2025-05-25 17:10:16,146 - PrecisionTuner.Main - INFO -   Constraint Count: 1
+2025-05-25 17:10:16,146 - PrecisionTuner.Main - INFO - SUCCESS: 100 samples generated with constraint progression!
+2025-05-25 17:10:16,146 - PrecisionTuner.Main - INFO - Check 'precision_instruct_constraint_progression_100' directory for all files
+2025-05-25 17:10:16,146 - PrecisionTuner.Main - INFO - Round-Robin Assignment Verification:
+2025-05-25 17:10:16,146 - PrecisionTuner.Main - INFO - First 10 assignments (sample_index, assigned_model_index, expected_index):
+2025-05-25 17:10:16,146 - PrecisionTuner.Main - INFO -   Sample 0: assigned=0, expected=0 ✓
+2025-05-25 17:10:16,146 - PrecisionTuner.Main - INFO -   Sample 1: assigned=1, expected=1 ✓
+2025-05-25 17:10:16,146 - PrecisionTuner.Main - INFO -   Sample 2: assigned=2, expected=2 ✓
+2025-05-25 17:10:16,146 - PrecisionTuner.Main - INFO -   Sample 3: assigned=3, expected=3 ✓
+2025-05-25 17:10:16,147 - PrecisionTuner.Main - INFO -   Sample 4: assigned=0, expected=4 ✗
+2025-05-25 17:10:16,147 - PrecisionTuner.Main - INFO -   Sample 5: assigned=1, expected=0 ✗
+2025-05-25 17:10:16,147 - PrecisionTuner.Main - INFO -   Sample 6: assigned=2, expected=1 ✗
+2025-05-25 17:10:16,147 - PrecisionTuner.Main - INFO -   Sample 7: assigned=3, expected=2 ✗
+2025-05-25 17:10:16,147 - PrecisionTuner.Main - INFO -   Sample 8: assigned=0, expected=3 ✗
+2025-05-25 17:10:16,147 - PrecisionTuner.Main - INFO -   Sample 9: assigned=1, expected=4 ✗
+2025-05-25 17:10:16,147 - PrecisionTuner.Main - WARNING - Found 80 incorrect assignments!
+2025-05-25 17:10:16,147 - PrecisionTuner.Main - WARNING -   Sample 4: got 0, expected 4
+2025-05-25 17:10:16,147 - PrecisionTuner.Main - WARNING -   Sample 5: got 1, expected 0
+2025-05-25 17:10:16,147 - PrecisionTuner.Main - WARNING -   Sample 6: got 2, expected 1
+2025-05-25 17:10:16,147 - PrecisionTuner.Main - WARNING -   Sample 7: got 3, expected 2
+2025-05-25 17:10:16,147 - PrecisionTuner.Main - WARNING -   Sample 8: got 0, expected 3
+2025-05-25 17:10:16,147 - PrecisionTuner.Main - INFO - Constraint Progression Filtering Examples:
+2025-05-25 17:10:16,148 - PrecisionTuner.Main - INFO - L1 (Single constraint) samples: 25
+2025-05-25 17:10:16,148 - PrecisionTuner.Main - INFO -   Example: Write about data science in exactly 50 words.
+2025-05-25 17:10:16,148 - PrecisionTuner.Main - INFO -   Learning focus: Precise length control
+2025-05-25 17:10:16,148 - PrecisionTuner.Main - INFO - L4 (Expert constraint) samples: 15
+2025-05-25 17:10:16,148 - PrecisionTuner.Main - INFO -   Example: Create a comprehensive json analysis of system optimization with exactly 150 words. Avoid: simple, basic, easy, straightforward. Must include: advanced, comprehensive, sophisticated.
+2025-05-25 17:10:16,148 - PrecisionTuner.Main - INFO -   Learning focus: Full constraint coordination and mastery
+2025-05-25 17:10:16,148 - PrecisionTuner.Main - INFO - Length constraint samples: 26
+2025-05-25 17:10:16,148 - PrecisionTuner.Main - INFO - Format constraint samples: 40
+2025-05-25 17:10:16,148 - PrecisionTuner.Main - INFO - Mastery focus samples: 9
+2025-05-25 17:10:16,148 - PrecisionTuner.Main - INFO - Coordination focus samples: 9
+2025-05-25 17:10:16,148 - PrecisionTuner.Main - INFO - Constraint Learning Progression Analysis:
+2025-05-25 17:10:16,149 - PrecisionTuner.Main - INFO - Level 1: 25 samples, avg quality: 0.676
+2025-05-25 17:10:16,149 - PrecisionTuner.Main - INFO -   Constraint types: format_json, format_markdown, length_precision
+2025-05-25 17:10:16,149 - PrecisionTuner.Main - INFO -   Learning focus: Precise length control
+2025-05-25 17:10:16,149 - PrecisionTuner.Main - INFO -   Constraint count: 1
+2025-05-25 17:10:16,149 - PrecisionTuner.Main - INFO - Level 2: 30 samples, avg quality: 0.705
+2025-05-25 17:10:16,149 - PrecisionTuner.Main - INFO -   Constraint types: length_forbidden_combo, format_length_combo, format_required_combo
+2025-05-25 17:10:16,149 - PrecisionTuner.Main - INFO -   Learning focus: Format precision + length control
+2025-05-25 17:10:16,149 - PrecisionTuner.Main - INFO -   Constraint count: 2
+2025-05-25 17:10:16,149 - PrecisionTuner.Main - INFO - Level 3: 30 samples, avg quality: 0.719
+2025-05-25 17:10:16,149 - PrecisionTuner.Main - INFO -   Constraint types: triple_precision, comprehensive_markdown, advanced_requirements
+2025-05-25 17:10:16,149 - PrecisionTuner.Main - INFO -   Learning focus: Format + length + vocabulary control
+2025-05-25 17:10:16,150 - PrecisionTuner.Main - INFO -   Constraint count: 3
+2025-05-25 17:10:16,150 - PrecisionTuner.Main - INFO - Level 4: 15 samples, avg quality: 0.552
+2025-05-25 17:10:16,150 - PrecisionTuner.Main - INFO -   Constraint types: expert_comprehensive, expert_technical_deep_dive
+2025-05-25 17:10:16,150 - PrecisionTuner.Main - INFO -   Learning focus: Full constraint coordination and mastery
+2025-05-25 17:10:16,150 - PrecisionTuner.Main - INFO -   Constraint count: 4
+2025-05-25 17:10:16,150 - PrecisionTuner.Main - INFO - Generated Files:
+2025-05-25 17:10:16,150 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/alpaca_enhanced_format.json
+2025-05-25 17:10:16,150 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/raw_dataset.json
+2025-05-25 17:10:16,151 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/alpaca_format.json
+2025-05-25 17:10:16,151 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/dataset_statistics.json
+2025-05-25 17:10:16,151 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/README.md
+2025-05-25 17:10:16,151 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/dataset_dict.json
+2025-05-25 17:10:16,151 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/train/dataset_info.json
+2025-05-25 17:10:16,151 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/train/data-00000-of-00001.arrow
+2025-05-25 17:10:16,151 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/train/state.json
+2025-05-25 17:10:16,152 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/test/dataset_info.json
+2025-05-25 17:10:16,152 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/test/data-00000-of-00001.arrow
+2025-05-25 17:10:16,152 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/test/state.json
+2025-05-25 17:10:16,152 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/validation/dataset_info.json
+2025-05-25 17:10:16,152 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/validation/data-00000-of-00001.arrow
+2025-05-25 17:10:16,152 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/validation/state.json
+2025-05-25 17:10:16,152 - PrecisionTuner.Main - INFO - 
+Constraint Progression Filtering Examples:
+2025-05-25 17:10:16,152 - PrecisionTuner.Main - INFO - # Filter by constraint level
+2025-05-25 17:10:16,152 - PrecisionTuner.Main - INFO - single_constraints = [s for s in dataset if s['constraint_level'] == 1]
+2025-05-25 17:10:16,153 - PrecisionTuner.Main - INFO - expert_constraints = [s for s in dataset if s['constraint_level'] == 4]
+2025-05-25 17:10:16,153 - PrecisionTuner.Main - INFO - 
+2025-05-25 17:10:16,153 - PrecisionTuner.Main - INFO - # Filter by learning focus
+2025-05-25 17:10:16,153 - PrecisionTuner.Main - INFO - mastery_samples = [s for s in dataset if 'mastery' in s['learning_focus']]
+2025-05-25 17:10:16,153 - PrecisionTuner.Main - INFO - coordination_samples = [s for s in dataset if 'coordination' in s['learning_focus']]
+2025-05-25 17:10:16,153 - PrecisionTuner.Main - INFO - 
+2025-05-25 17:10:16,153 - PrecisionTuner.Main - INFO - # Filter by constraint complexity
+2025-05-25 17:10:16,153 - PrecisionTuner.Main - INFO - simple_constraints = [s for s in dataset if s['constraint_count'] == 1]
+2025-05-25 17:10:16,153 - PrecisionTuner.Main - INFO - complex_constraints = [s for s in dataset if s['constraint_count'] >= 3]
+2025-05-25 17:24:55,094 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-25 17:24:55,457 - datasets - INFO - PyTorch version 2.5.1 available.
+2025-05-25 17:24:55,458 - datasets - INFO - TensorFlow version 2.18.0 available.
+2025-05-25 17:24:55,710 - PrecisionTuner.Main - INFO - PRECISIONTUNER: CONSTRAINT PROGRESSION + ROUND-ROBIN
+2025-05-25 17:24:55,710 - PrecisionTuner.Main - INFO - ============================================================
+2025-05-25 17:24:55,710 - PrecisionTuner.Main - INFO - Strategy: Round-robin assignment (sample_index % 5)
+2025-05-25 17:24:55,710 - PrecisionTuner.Main - INFO - Learning: Constraint progression (L1→L2→L3→L4)
+2025-05-25 17:24:55,710 - PrecisionTuner.Main - INFO - L1: Single constraints (length OR format)
+2025-05-25 17:24:55,710 - PrecisionTuner.Main - INFO - L2: Dual constraints (length + forbidden)
+2025-05-25 17:24:55,710 - PrecisionTuner.Main - INFO - L3: Triple constraints (format + length + forbidden)
+2025-05-25 17:24:55,710 - PrecisionTuner.Main - INFO - L4: Expert constraints (all types combined)
+2025-05-25 17:24:55,710 - PrecisionTuner.Main - INFO - Distribution: Exactly 20% per model (guaranteed)
+2025-05-25 17:24:55,711 - PrecisionTuner.Main - INFO - Initializing Constraint Progression PrecisionTuner...
+2025-05-25 17:24:55,711 - PrecisionTuner - INFO - Total model memory: 4315MB (4.2GB)
+2025-05-25 17:24:55,711 - PrecisionTuner - INFO - 3-model configuration optimized for available resources
+2025-05-25 17:24:55,717 - PrecisionTuner - INFO - Available models in Ollama:
+2025-05-25 17:24:55,717 - PrecisionTuner - INFO -   ✓ phi3:3.8b
+2025-05-25 17:24:55,717 - PrecisionTuner - INFO -   ✓ llama3.2:1b
+2025-05-25 17:24:55,717 - PrecisionTuner - INFO -   ✓ gemma3:1b
+2025-05-25 17:24:55,718 - PrecisionTuner - INFO -   → gemma3:1b (creative_storyteller)
+2025-05-25 17:24:55,718 - PrecisionTuner - INFO -   → llama3.2:1b (knowledge_synthesizer)
+2025-05-25 17:24:55,718 - PrecisionTuner - INFO -   → phi3:3.8b (precision_specialist)
+2025-05-25 17:24:55,718 - PrecisionTuner - INFO - Initialized with 3 models for round-robin assignment
+2025-05-25 17:24:55,718 - PrecisionTuner.Main - INFO - Model Assignment Preview (first 10 samples):
+2025-05-25 17:24:55,718 - PrecisionTuner.Main - INFO -   Sample 0: gemma3:1b (creative_storyteller)
+2025-05-25 17:24:55,718 - PrecisionTuner.Main - INFO -   Sample 1: llama3.2:1b (knowledge_synthesizer)
+2025-05-25 17:24:55,718 - PrecisionTuner.Main - INFO -   Sample 2: phi3:3.8b (precision_specialist)
+2025-05-25 17:24:55,719 - PrecisionTuner.Main - INFO -   Sample 3: gemma3:1b (creative_storyteller)
+2025-05-25 17:24:55,719 - PrecisionTuner.Main - INFO -   Sample 4: llama3.2:1b (knowledge_synthesizer)
+2025-05-25 17:24:55,719 - PrecisionTuner.Main - INFO -   Sample 5: phi3:3.8b (precision_specialist)
+2025-05-25 17:24:55,719 - PrecisionTuner.Main - INFO -   Sample 6: gemma3:1b (creative_storyteller)
+2025-05-25 17:24:55,719 - PrecisionTuner.Main - INFO -   Sample 7: llama3.2:1b (knowledge_synthesizer)
+2025-05-25 17:24:55,719 - PrecisionTuner.Main - INFO -   Sample 8: phi3:3.8b (precision_specialist)
+2025-05-25 17:24:55,719 - PrecisionTuner.Main - INFO -   Sample 9: gemma3:1b (creative_storyteller)
+2025-05-25 17:24:55,719 - PrecisionTuner.Main - INFO - Starting constraint progression dataset generation...
+2025-05-25 17:24:55,719 - PrecisionTuner.DatasetGenerator - INFO - 3-MODEL CONSTRAINT PROGRESSION DATASET GENERATION
+2025-05-25 17:24:55,719 - PrecisionTuner.DatasetGenerator - INFO - ============================================================
+2025-05-25 17:24:55,719 - PrecisionTuner.DatasetGenerator - INFO - Target size: 100 samples
+2025-05-25 17:24:55,719 - PrecisionTuner.DatasetGenerator - INFO - Assignment: Round-robin (sample_index % 3)
+2025-05-25 17:24:55,720 - PrecisionTuner.DatasetGenerator - INFO - Models: gemma3:1b, llama3.2:1b, phi3:3.8b
+2025-05-25 17:24:55,720 - PrecisionTuner.DatasetGenerator - INFO - Personas: creative_storyteller, knowledge_synthesizer, precision_specialist
+2025-05-25 17:24:55,720 - PrecisionTuner.DatasetGenerator - INFO - Learning: Experiential constraint progression (L1→L2→L3→L4)
+2025-05-25 17:24:55,720 - PrecisionTuner.DatasetGenerator - INFO - Constraint distribution: {1: 0.25, 2: 0.3, 3: 0.3, 4: 0.15}
+2025-05-25 17:24:55,720 - PrecisionTuner.DatasetGenerator - INFO - Generating 25 samples at constraint level 1
+2025-05-25 17:24:55,720 - PrecisionTuner.DatasetGenerator - INFO - Learning focus: Progressive constraint mastery with 3 specialized personas
+2025-05-25 17:24:55,723 - PrecisionTuner.DatasetGenerator - INFO - Sample 0: gemma3:1b (creative_storyteller) - Precise length control
+2025-05-25 17:24:55,723 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:24:58,691 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:24:59,522 - PrecisionTuner.DatasetGenerator - INFO - Sample 1: llama3.2:1b (knowledge_synthesizer) - Precise length control
+2025-05-25 17:24:59,522 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:25:02,880 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:25:06,234 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:25:06,821 - PrecisionTuner.DatasetGenerator - INFO - Sample 2: phi3:3.8b (precision_specialist) - Structured output formatting
+2025-05-25 17:25:06,821 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:25:07,952 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:25:10,382 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:25:14,279 - PrecisionTuner.DatasetGenerator - INFO - Sample 3: gemma3:1b (creative_storyteller) - Structured output formatting
+2025-05-25 17:25:14,280 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:25:15,418 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:25:15,563 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:25:22,094 - PrecisionTuner.DatasetGenerator - INFO - Sample 4: llama3.2:1b (knowledge_synthesizer) - Structured output formatting
+2025-05-25 17:25:22,094 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:25:23,231 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:25:23,362 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:25:26,043 - PrecisionTuner.DatasetGenerator - INFO - Sample 5: phi3:3.8b (precision_specialist) - Precise length control
+2025-05-25 17:25:26,043 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:25:27,182 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:25:27,217 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:25:27,861 - PrecisionTuner.DatasetGenerator - INFO - Sample 6: gemma3:1b (creative_storyteller) - Markdown structure and organization
+2025-05-25 17:25:27,861 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:25:28,999 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:25:29,162 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:25:35,524 - PrecisionTuner.DatasetGenerator - INFO - Sample 7: llama3.2:1b (knowledge_synthesizer) - Precise length control
+2025-05-25 17:25:35,524 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:25:36,648 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:25:36,743 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:25:37,320 - PrecisionTuner.DatasetGenerator - INFO - Sample 8: phi3:3.8b (precision_specialist) - Structured output formatting
+2025-05-25 17:25:37,320 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:25:38,452 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:25:38,493 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:25:41,777 - PrecisionTuner.DatasetGenerator - INFO - Sample 9: gemma3:1b (creative_storyteller) - Precise length control
+2025-05-25 17:25:41,778 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:25:42,914 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:25:43,073 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:25:43,837 - PrecisionTuner.DatasetGenerator - INFO - Sample 10: llama3.2:1b (knowledge_synthesizer) - Structured output formatting
+2025-05-25 17:25:43,837 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:25:44,979 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:25:45,078 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:25:47,435 - PrecisionTuner.DatasetGenerator - INFO - Sample 11: phi3:3.8b (precision_specialist) - Precise length control
+2025-05-25 17:25:47,435 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:25:48,576 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:25:48,625 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:25:49,367 - PrecisionTuner.DatasetGenerator - INFO - Sample 12: gemma3:1b (creative_storyteller) - Precise length control
+2025-05-25 17:25:49,367 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:25:50,510 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:25:50,665 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:25:51,462 - PrecisionTuner.DatasetGenerator - INFO - Sample 13: llama3.2:1b (knowledge_synthesizer) - Structured output formatting
+2025-05-25 17:25:51,463 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:25:52,601 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:25:52,699 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:25:54,859 - PrecisionTuner.DatasetGenerator - INFO - Sample 14: phi3:3.8b (precision_specialist) - Structured output formatting
+2025-05-25 17:25:54,859 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:25:56,003 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:25:56,050 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:25:59,677 - PrecisionTuner.DatasetGenerator - INFO - Sample 15: gemma3:1b (creative_storyteller) - Markdown structure and organization
+2025-05-25 17:25:59,677 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:26:00,798 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:26:00,935 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:26:07,410 - PrecisionTuner.DatasetGenerator - INFO - Sample 16: llama3.2:1b (knowledge_synthesizer) - Precise length control
+2025-05-25 17:26:07,411 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:26:08,543 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:26:08,640 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:26:09,260 - PrecisionTuner.DatasetGenerator - INFO - Sample 17: phi3:3.8b (precision_specialist) - Precise length control
+2025-05-25 17:26:09,261 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:26:10,395 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:26:10,444 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:26:11,181 - PrecisionTuner.DatasetGenerator - INFO - Sample 18: gemma3:1b (creative_storyteller) - Precise length control
+2025-05-25 17:26:11,181 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:26:12,318 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:26:12,467 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:26:13,078 - PrecisionTuner.DatasetGenerator - INFO - Sample 19: llama3.2:1b (knowledge_synthesizer) - Precise length control
+2025-05-25 17:26:13,078 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:26:14,212 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:26:14,309 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:26:14,890 - PrecisionTuner.DatasetGenerator - INFO - Sample 20: phi3:3.8b (precision_specialist) - Structured output formatting
+2025-05-25 17:26:14,890 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:26:16,030 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:26:16,078 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:26:18,737 - PrecisionTuner.DatasetGenerator - INFO - Sample 21: gemma3:1b (creative_storyteller) - Structured output formatting
+2025-05-25 17:26:18,737 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:26:19,894 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:26:20,051 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:26:26,750 - PrecisionTuner.DatasetGenerator - INFO - Sample 22: llama3.2:1b (knowledge_synthesizer) - Markdown structure and organization
+2025-05-25 17:26:26,750 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:26:27,888 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:26:27,991 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:26:31,854 - PrecisionTuner.DatasetGenerator - INFO - Sample 23: phi3:3.8b (precision_specialist) - Precise length control
+2025-05-25 17:26:31,854 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:26:32,991 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:26:33,040 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:26:33,746 - PrecisionTuner.DatasetGenerator - INFO - Sample 24: gemma3:1b (creative_storyteller) - Structured output formatting
+2025-05-25 17:26:33,747 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:26:34,887 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:26:35,045 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:26:41,768 - PrecisionTuner.DatasetGenerator - INFO - Generating 30 samples at constraint level 2
+2025-05-25 17:26:41,768 - PrecisionTuner.DatasetGenerator - INFO - Learning focus: Progressive constraint mastery with 3 specialized personas
+2025-05-25 17:26:41,769 - PrecisionTuner.DatasetGenerator - INFO - Sample 25: llama3.2:1b (knowledge_synthesizer) - Format precision + length control
+2025-05-25 17:26:41,769 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:26:42,909 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:26:43,008 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:26:43,589 - PrecisionTuner.DatasetGenerator - INFO - Sample 26: phi3:3.8b (precision_specialist) - Length control + vocabulary constraints
+2025-05-25 17:26:43,590 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:26:44,729 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:26:44,768 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:26:45,434 - PrecisionTuner.DatasetGenerator - INFO - Sample 27: gemma3:1b (creative_storyteller) - Length control + vocabulary constraints
+2025-05-25 17:26:45,434 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:26:46,569 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:26:46,721 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:26:47,493 - PrecisionTuner.DatasetGenerator - INFO - Sample 28: llama3.2:1b (knowledge_synthesizer) - Length control + vocabulary constraints
+2025-05-25 17:26:47,493 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:26:48,614 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:26:48,703 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:26:49,280 - PrecisionTuner.DatasetGenerator - INFO - Sample 29: phi3:3.8b (precision_specialist) - Format precision + length control
+2025-05-25 17:26:49,281 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:26:50,423 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:26:50,472 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:26:52,205 - PrecisionTuner.DatasetGenerator - INFO - Sample 30: gemma3:1b (creative_storyteller) - Format precision + length control
+2025-05-25 17:26:52,206 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:26:53,347 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:26:53,495 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:26:54,744 - PrecisionTuner.DatasetGenerator - INFO - Sample 31: llama3.2:1b (knowledge_synthesizer) - Format precision + length control
+2025-05-25 17:26:54,744 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:26:55,882 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:26:55,979 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:26:56,997 - PrecisionTuner.DatasetGenerator - INFO - Sample 32: phi3:3.8b (precision_specialist) - Format structure + required content
+2025-05-25 17:26:56,997 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:26:58,127 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:26:58,176 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:27:03,281 - PrecisionTuner.DatasetGenerator - INFO - Sample 33: gemma3:1b (creative_storyteller) - Format precision + length control
+2025-05-25 17:27:03,281 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:27:04,418 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:27:04,575 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:27:06,077 - PrecisionTuner.DatasetGenerator - INFO - Sample 34: llama3.2:1b (knowledge_synthesizer) - Format structure + required content
+2025-05-25 17:27:06,077 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:27:07,202 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:27:07,294 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:27:10,837 - PrecisionTuner.DatasetGenerator - INFO - Sample 35: phi3:3.8b (precision_specialist) - Length control + vocabulary constraints
+2025-05-25 17:27:10,837 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:27:11,974 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:27:12,020 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:27:12,773 - PrecisionTuner.DatasetGenerator - INFO - Sample 36: gemma3:1b (creative_storyteller) - Format structure + required content
+2025-05-25 17:27:12,773 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:27:13,911 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:27:14,053 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:27:20,586 - PrecisionTuner.DatasetGenerator - INFO - Sample 37: llama3.2:1b (knowledge_synthesizer) - Format precision + length control
+2025-05-25 17:27:20,586 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:27:21,725 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:27:21,822 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:27:22,550 - PrecisionTuner.DatasetGenerator - INFO - Sample 38: phi3:3.8b (precision_specialist) - Format precision + length control
+2025-05-25 17:27:22,550 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:27:23,684 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:27:23,731 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:27:25,108 - PrecisionTuner.DatasetGenerator - INFO - Sample 39: gemma3:1b (creative_storyteller) - Format structure + required content
+2025-05-25 17:27:25,108 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:27:26,243 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:27:26,396 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:27:32,836 - PrecisionTuner.DatasetGenerator - INFO - Sample 40: llama3.2:1b (knowledge_synthesizer) - Format precision + length control
+2025-05-25 17:27:32,836 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:27:33,966 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:27:34,055 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:27:34,785 - PrecisionTuner.DatasetGenerator - INFO - Sample 41: phi3:3.8b (precision_specialist) - Format structure + required content
+2025-05-25 17:27:34,785 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:27:35,906 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:27:35,953 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:27:41,212 - PrecisionTuner.DatasetGenerator - INFO - Sample 42: gemma3:1b (creative_storyteller) - Format structure + required content
+2025-05-25 17:27:41,212 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:27:42,332 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:27:42,485 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:27:48,866 - PrecisionTuner.DatasetGenerator - INFO - Sample 43: llama3.2:1b (knowledge_synthesizer) - Format structure + required content
+2025-05-25 17:27:48,866 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:27:49,996 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:27:50,101 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:27:53,646 - PrecisionTuner.DatasetGenerator - INFO - Sample 44: phi3:3.8b (precision_specialist) - Format precision + length control
+2025-05-25 17:27:53,646 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:27:54,785 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:27:54,836 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:27:56,679 - PrecisionTuner.DatasetGenerator - INFO - Sample 45: gemma3:1b (creative_storyteller) - Length control + vocabulary constraints
+2025-05-25 17:27:56,679 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:27:57,813 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:27:57,969 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:27:58,738 - PrecisionTuner.DatasetGenerator - INFO - Sample 46: llama3.2:1b (knowledge_synthesizer) - Format precision + length control
+2025-05-25 17:27:58,738 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:27:59,861 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:27:59,963 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:28:00,922 - PrecisionTuner.DatasetGenerator - INFO - Sample 47: phi3:3.8b (precision_specialist) - Format structure + required content
+2025-05-25 17:28:00,922 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:28:02,063 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:28:02,112 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:28:07,292 - PrecisionTuner.DatasetGenerator - INFO - Sample 48: gemma3:1b (creative_storyteller) - Format structure + required content
+2025-05-25 17:28:07,293 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:28:08,433 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:28:08,583 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:28:15,071 - PrecisionTuner.DatasetGenerator - INFO - Sample 49: llama3.2:1b (knowledge_synthesizer) - Length control + vocabulary constraints
+2025-05-25 17:28:15,071 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:28:16,209 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:28:16,311 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:28:16,933 - PrecisionTuner.DatasetGenerator - INFO - Sample 50: phi3:3.8b (precision_specialist) - Length control + vocabulary constraints
+2025-05-25 17:28:16,934 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:28:18,079 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:28:18,128 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:28:18,800 - PrecisionTuner.DatasetGenerator - INFO - Sample 51: gemma3:1b (creative_storyteller) - Format precision + length control
+2025-05-25 17:28:18,801 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:28:19,937 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:28:20,092 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:28:21,646 - PrecisionTuner.DatasetGenerator - INFO - Sample 52: llama3.2:1b (knowledge_synthesizer) - Format structure + required content
+2025-05-25 17:28:21,646 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:28:22,777 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:28:22,873 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:28:26,153 - PrecisionTuner.DatasetGenerator - INFO - Sample 53: phi3:3.8b (precision_specialist) - Length control + vocabulary constraints
+2025-05-25 17:28:26,153 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:28:27,290 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:28:27,339 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:28:28,160 - PrecisionTuner.DatasetGenerator - INFO - Sample 54: gemma3:1b (creative_storyteller) - Length control + vocabulary constraints
+2025-05-25 17:28:28,160 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:28:29,301 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:28:29,442 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:28:30,328 - PrecisionTuner.DatasetGenerator - INFO - Generating 30 samples at constraint level 3
+2025-05-25 17:28:30,329 - PrecisionTuner.DatasetGenerator - INFO - Learning focus: Progressive constraint mastery with 3 specialized personas
+2025-05-25 17:28:30,329 - PrecisionTuner.DatasetGenerator - INFO - Sample 55: llama3.2:1b (knowledge_synthesizer) - Format + content depth + vocabulary sophistication
+2025-05-25 17:28:30,330 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:28:31,467 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:28:31,559 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:28:35,933 - PrecisionTuner.DatasetGenerator - INFO - Sample 56: phi3:3.8b (precision_specialist) - Format + length + vocabulary control
+2025-05-25 17:28:35,934 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:28:37,071 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:28:37,118 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:28:40,916 - PrecisionTuner.DatasetGenerator - INFO - Sample 57: gemma3:1b (creative_storyteller) - Format + content depth + vocabulary sophistication
+2025-05-25 17:28:40,916 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:28:42,053 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:28:42,202 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:28:48,537 - PrecisionTuner.DatasetGenerator - INFO - Sample 58: llama3.2:1b (knowledge_synthesizer) - Length + vocabulary + content requirements
+2025-05-25 17:28:48,538 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:28:49,670 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:28:49,756 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:28:50,596 - PrecisionTuner.DatasetGenerator - INFO - Sample 59: phi3:3.8b (precision_specialist) - Length + vocabulary + content requirements
+2025-05-25 17:28:50,596 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:28:51,732 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:28:51,780 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:28:52,945 - PrecisionTuner.DatasetGenerator - INFO - Sample 60: gemma3:1b (creative_storyteller) - Format + content depth + vocabulary sophistication
+2025-05-25 17:28:52,945 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:28:54,085 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:28:54,266 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:29:00,984 - PrecisionTuner.DatasetGenerator - INFO - Sample 61: llama3.2:1b (knowledge_synthesizer) - Length + vocabulary + content requirements
+2025-05-25 17:29:00,984 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:29:02,105 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:29:02,203 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:29:02,876 - PrecisionTuner.DatasetGenerator - INFO - Sample 62: phi3:3.8b (precision_specialist) - Format + length + vocabulary control
+2025-05-25 17:29:02,877 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:29:04,017 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:29:04,059 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:29:07,738 - PrecisionTuner.DatasetGenerator - INFO - Sample 63: gemma3:1b (creative_storyteller) - Length + vocabulary + content requirements
+2025-05-25 17:29:07,738 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:29:08,858 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:29:09,015 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:29:10,111 - PrecisionTuner.DatasetGenerator - INFO - Sample 64: llama3.2:1b (knowledge_synthesizer) - Format + content depth + vocabulary sophistication
+2025-05-25 17:29:10,111 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:29:11,238 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:29:11,335 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:29:15,591 - PrecisionTuner.DatasetGenerator - INFO - Sample 65: phi3:3.8b (precision_specialist) - Format + length + vocabulary control
+2025-05-25 17:29:15,592 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:29:16,729 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:29:16,777 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:29:19,558 - PrecisionTuner.DatasetGenerator - INFO - Sample 66: gemma3:1b (creative_storyteller) - Length + vocabulary + content requirements
+2025-05-25 17:29:19,558 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:29:20,699 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:29:20,852 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:29:21,997 - PrecisionTuner.DatasetGenerator - INFO - Sample 67: llama3.2:1b (knowledge_synthesizer) - Format + length + vocabulary control
+2025-05-25 17:29:21,997 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:29:23,118 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:29:23,213 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:29:26,789 - PrecisionTuner.DatasetGenerator - INFO - Sample 68: phi3:3.8b (precision_specialist) - Format + content depth + vocabulary sophistication
+2025-05-25 17:29:26,789 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:29:27,933 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:29:27,981 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:29:33,182 - PrecisionTuner.DatasetGenerator - INFO - Sample 69: gemma3:1b (creative_storyteller) - Format + content depth + vocabulary sophistication
+2025-05-25 17:29:33,182 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:29:34,323 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:29:34,470 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:29:41,112 - PrecisionTuner.DatasetGenerator - INFO - Sample 70: llama3.2:1b (knowledge_synthesizer) - Format + content depth + vocabulary sophistication
+2025-05-25 17:29:41,112 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:29:42,252 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:29:42,352 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:29:46,832 - PrecisionTuner.DatasetGenerator - INFO - Sample 71: phi3:3.8b (precision_specialist) - Length + vocabulary + content requirements
+2025-05-25 17:29:46,833 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:29:47,975 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:29:48,025 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:29:49,493 - PrecisionTuner.DatasetGenerator - INFO - Sample 72: gemma3:1b (creative_storyteller) - Length + vocabulary + content requirements
+2025-05-25 17:29:49,493 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:29:50,614 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:29:50,768 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:29:52,008 - PrecisionTuner.DatasetGenerator - INFO - Sample 73: llama3.2:1b (knowledge_synthesizer) - Format + content depth + vocabulary sophistication
+2025-05-25 17:29:52,008 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:29:53,137 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:29:53,229 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:29:57,429 - PrecisionTuner.DatasetGenerator - INFO - Sample 74: phi3:3.8b (precision_specialist) - Length + vocabulary + content requirements
+2025-05-25 17:29:57,429 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:29:58,569 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:29:58,612 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:30:00,320 - PrecisionTuner.DatasetGenerator - INFO - Sample 75: gemma3:1b (creative_storyteller) - Format + length + vocabulary control
+2025-05-25 17:30:00,320 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:30:01,456 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:30:01,600 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:30:03,405 - PrecisionTuner.DatasetGenerator - INFO - Sample 76: llama3.2:1b (knowledge_synthesizer) - Format + content depth + vocabulary sophistication
+2025-05-25 17:30:03,406 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:30:04,542 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:30:04,636 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:30:09,002 - PrecisionTuner.DatasetGenerator - INFO - Sample 77: phi3:3.8b (precision_specialist) - Format + length + vocabulary control
+2025-05-25 17:30:09,003 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:30:10,144 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:30:10,182 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:30:13,233 - PrecisionTuner.DatasetGenerator - INFO - Sample 78: gemma3:1b (creative_storyteller) - Length + vocabulary + content requirements
+2025-05-25 17:30:13,233 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:30:14,369 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:30:14,519 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:30:15,631 - PrecisionTuner.DatasetGenerator - INFO - Sample 79: llama3.2:1b (knowledge_synthesizer) - Format + length + vocabulary control
+2025-05-25 17:30:15,632 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:30:16,768 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:30:16,850 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:30:18,154 - PrecisionTuner.DatasetGenerator - INFO - Sample 80: phi3:3.8b (precision_specialist) - Format + length + vocabulary control
+2025-05-25 17:30:18,155 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:30:19,290 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:30:19,323 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:30:21,343 - PrecisionTuner.DatasetGenerator - INFO - Sample 81: gemma3:1b (creative_storyteller) - Format + length + vocabulary control
+2025-05-25 17:30:21,343 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:30:22,464 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:30:22,616 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:30:24,487 - PrecisionTuner.DatasetGenerator - INFO - Sample 82: llama3.2:1b (knowledge_synthesizer) - Format + content depth + vocabulary sophistication
+2025-05-25 17:30:24,487 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:30:25,624 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:30:25,716 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:30:30,395 - PrecisionTuner.DatasetGenerator - INFO - Sample 83: phi3:3.8b (precision_specialist) - Format + content depth + vocabulary sophistication
+2025-05-25 17:30:30,395 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:30:31,529 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:30:31,577 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:30:36,834 - PrecisionTuner.DatasetGenerator - INFO - Sample 84: gemma3:1b (creative_storyteller) - Format + content depth + vocabulary sophistication
+2025-05-25 17:30:36,835 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:30:37,972 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:30:38,141 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:30:44,649 - PrecisionTuner.DatasetGenerator - INFO - Generating 15 samples at constraint level 4
+2025-05-25 17:30:44,649 - PrecisionTuner.DatasetGenerator - INFO - Learning focus: Progressive constraint mastery with 3 specialized personas
+2025-05-25 17:30:44,650 - PrecisionTuner.DatasetGenerator - INFO - Sample 85: llama3.2:1b (knowledge_synthesizer) - Full constraint coordination and mastery
+2025-05-25 17:30:44,650 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:30:45,790 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:30:45,887 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:30:46,156 - PrecisionTuner.DatasetGenerator - INFO - Sample 86: phi3:3.8b (precision_specialist) - Full constraint coordination and mastery
+2025-05-25 17:30:46,156 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:30:47,293 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:30:47,340 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:30:50,862 - PrecisionTuner.DatasetGenerator - INFO - Sample 87: gemma3:1b (creative_storyteller) - Maximum constraint complexity with technical depth
+2025-05-25 17:30:50,862 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:30:51,999 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:30:52,152 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:30:54,784 - PrecisionTuner.DatasetGenerator - INFO - Sample 88: llama3.2:1b (knowledge_synthesizer) - Maximum constraint complexity with technical depth
+2025-05-25 17:30:54,784 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:30:55,927 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:30:56,020 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:30:57,578 - PrecisionTuner.DatasetGenerator - INFO - Sample 89: phi3:3.8b (precision_specialist) - Full constraint coordination and mastery
+2025-05-25 17:30:57,579 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:30:58,717 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:30:58,764 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:31:01,932 - PrecisionTuner.DatasetGenerator - INFO - Sample 90: gemma3:1b (creative_storyteller) - Maximum constraint complexity with technical depth
+2025-05-25 17:31:01,932 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:31:03,076 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:31:03,232 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:31:05,545 - PrecisionTuner.DatasetGenerator - INFO - Sample 91: llama3.2:1b (knowledge_synthesizer) - Maximum constraint complexity with technical depth
+2025-05-25 17:31:05,545 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:31:06,688 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:31:06,782 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:31:08,464 - PrecisionTuner.DatasetGenerator - INFO - Sample 92: phi3:3.8b (precision_specialist) - Full constraint coordination and mastery
+2025-05-25 17:31:08,464 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:31:09,601 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:31:09,644 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:31:12,402 - PrecisionTuner.DatasetGenerator - INFO - Sample 93: gemma3:1b (creative_storyteller) - Maximum constraint complexity with technical depth
+2025-05-25 17:31:12,402 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:31:13,540 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:31:13,717 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:31:15,824 - PrecisionTuner.DatasetGenerator - INFO - Sample 94: llama3.2:1b (knowledge_synthesizer) - Maximum constraint complexity with technical depth
+2025-05-25 17:31:15,824 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:31:16,959 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:31:17,058 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:31:18,837 - PrecisionTuner.DatasetGenerator - INFO - Sample 95: phi3:3.8b (precision_specialist) - Maximum constraint complexity with technical depth
+2025-05-25 17:31:18,837 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:31:19,971 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:31:20,020 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:31:22,289 - PrecisionTuner.DatasetGenerator - INFO - Sample 96: gemma3:1b (creative_storyteller) - Full constraint coordination and mastery
+2025-05-25 17:31:22,289 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:31:23,428 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:31:23,608 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:31:26,233 - PrecisionTuner.DatasetGenerator - INFO - Sample 97: llama3.2:1b (knowledge_synthesizer) - Maximum constraint complexity with technical depth
+2025-05-25 17:31:26,233 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:31:27,372 - PrecisionTuner - INFO - Loading llama3.2:1b for knowledge_synthesizer
+2025-05-25 17:31:27,435 - PrecisionTuner - INFO - ✓ llama3.2:1b loaded successfully
+2025-05-25 17:31:29,701 - PrecisionTuner.DatasetGenerator - INFO - Sample 98: phi3:3.8b (precision_specialist) - Full constraint coordination and mastery
+2025-05-25 17:31:29,702 - PrecisionTuner - INFO - Unloading llama3.2:1b from memory
+2025-05-25 17:31:30,837 - PrecisionTuner - INFO - Loading phi3:3.8b for precision_specialist
+2025-05-25 17:31:30,884 - PrecisionTuner - INFO - ✓ phi3:3.8b loaded successfully
+2025-05-25 17:31:34,736 - PrecisionTuner.DatasetGenerator - INFO - Sample 99: gemma3:1b (creative_storyteller) - Full constraint coordination and mastery
+2025-05-25 17:31:34,736 - PrecisionTuner - INFO - Unloading phi3:3.8b from memory
+2025-05-25 17:31:35,858 - PrecisionTuner - INFO - Loading gemma3:1b for creative_storyteller
+2025-05-25 17:31:35,991 - PrecisionTuner - INFO - ✓ gemma3:1b loaded successfully
+2025-05-25 17:31:39,245 - PrecisionTuner - INFO - Shutting down - preserving all models
+2025-05-25 17:31:39,246 - PrecisionTuner - INFO - Unloading gemma3:1b from memory
+2025-05-25 17:31:41,510 - PrecisionTuner.DatasetGenerator - INFO - 3-MODEL CONSTRAINT PROGRESSION COMPLETE!
+2025-05-25 17:31:41,510 - PrecisionTuner.DatasetGenerator - INFO - ==================================================
+2025-05-25 17:31:41,511 - PrecisionTuner.DatasetGenerator - INFO - Total samples: 100
+2025-05-25 17:31:41,511 - PrecisionTuner.DatasetGenerator - INFO - Average quality: 0.716
+2025-05-25 17:31:41,511 - PrecisionTuner.DatasetGenerator - INFO - 3-Model Round-Robin Distribution Verification:
+2025-05-25 17:31:41,511 - PrecisionTuner.DatasetGenerator - INFO -   gemma3:1b: 34 samples (expected: 34) - creative_storyteller
+2025-05-25 17:31:41,512 - PrecisionTuner.DatasetGenerator - INFO -   llama3.2:1b: 33 samples (expected: 33) - knowledge_synthesizer
+2025-05-25 17:31:41,512 - PrecisionTuner.DatasetGenerator - INFO -   phi3:3.8b: 33 samples (expected: 33) - precision_specialist
+2025-05-25 17:31:41,512 - PrecisionTuner.DatasetGenerator - INFO - Constraint Learning Progression:
+2025-05-25 17:31:41,512 - PrecisionTuner.DatasetGenerator - INFO -   L1: Single constraint mastery: 25 samples (25.0%) - avg quality: 0.620
+2025-05-25 17:31:41,513 - PrecisionTuner.DatasetGenerator - INFO -   L2: Dual constraint coordination: 30 samples (30.0%) - avg quality: 0.731
+2025-05-25 17:31:41,513 - PrecisionTuner.DatasetGenerator - INFO -   L3: Triple constraint integration: 30 samples (30.0%) - avg quality: 0.778
+2025-05-25 17:31:41,513 - PrecisionTuner.DatasetGenerator - INFO -   L4: Expert constraint mastery: 15 samples (15.0%) - avg quality: 0.719
+2025-05-25 17:31:41,514 - PrecisionTuner.DatasetGenerator - INFO - 3-Model Persona Specialization Effectiveness:
+2025-05-25 17:31:41,514 - PrecisionTuner.DatasetGenerator - INFO -   gemma3:1b (creative_storyteller): 34 samples (34.0%), avg quality: 0.629
+2025-05-25 17:31:41,514 - PrecisionTuner.DatasetGenerator - INFO -   llama3.2:1b (knowledge_synthesizer): 33 samples (33.0%), avg quality: 0.758
+2025-05-25 17:31:41,515 - PrecisionTuner.DatasetGenerator - INFO -   phi3:3.8b (precision_specialist): 33 samples (33.0%), avg quality: 0.762
+2025-05-25 17:31:41,515 - PrecisionTuner.DatasetGenerator - INFO - Learning Progression Analysis:
+2025-05-25 17:31:41,515 - PrecisionTuner.DatasetGenerator - INFO -   Level 1 average quality: 0.620
+2025-05-25 17:31:41,515 - PrecisionTuner.DatasetGenerator - INFO -   Level 2 average quality: 0.731
+2025-05-25 17:31:41,516 - PrecisionTuner.DatasetGenerator - INFO -   Level 3 average quality: 0.778
+2025-05-25 17:31:41,516 - PrecisionTuner.DatasetGenerator - INFO -   Level 4 average quality: 0.719
+2025-05-25 17:31:41,516 - PrecisionTuner.DatasetGenerator - INFO -   Overall trend: improving
+2025-05-25 17:31:41,516 - PrecisionTuner.DatasetGenerator - INFO - Contest Submission Summary:
+2025-05-25 17:31:41,516 - PrecisionTuner.DatasetGenerator - INFO -   ✅ 3-model perfect distribution: ~33.33% each
+2025-05-25 17:31:41,517 - PrecisionTuner.DatasetGenerator - INFO -   ✅ Constraint progression: L1→L4 implemented
+2025-05-25 17:31:41,517 - PrecisionTuner.DatasetGenerator - INFO -   ✅ Persona specialization: 3 distinct approaches
+2025-05-25 17:31:41,517 - PrecisionTuner.DatasetGenerator - INFO -   ✅ Measurable outcomes: 100 quantified samples
+2025-05-25 17:31:41,517 - PrecisionTuner.DatasetGenerator - INFO -   ✅ Contest-ready: All samples include contest metrics
+2025-05-25 17:31:41,517 - PrecisionTuner.Main - INFO - Saving dataset with constraint progression filtering...
+2025-05-25 17:31:41,518 - PrecisionTuner.DatasetSaver - INFO - Saving PrecisionInstruct Dataset
+2025-05-25 17:31:41,518 - PrecisionTuner.DatasetSaver - INFO - ========================================
+2025-05-25 17:31:41,623 - PrecisionTuner.DatasetSaver - INFO - Hugging Face format saved to: precision_instruct_constraint_progression_100/huggingface_format
+2025-05-25 17:31:41,637 - PrecisionTuner.DatasetSaver - INFO - Raw JSON saved to: precision_instruct_constraint_progression_100/raw_dataset.json
+2025-05-25 17:31:41,640 - PrecisionTuner.DatasetSaver - INFO - Alpaca format saved to: precision_instruct_constraint_progression_100/alpaca_format.json
+2025-05-25 17:31:41,648 - PrecisionTuner.DatasetSaver - INFO - CLEAN Enhanced Alpaca format saved to: precision_instruct_constraint_progression_100/alpaca_enhanced_format.json
+2025-05-25 17:31:41,649 - PrecisionTuner.DatasetSaver - INFO - ✓ Enhanced format includes model specialty but NO bias fields
+2025-05-25 17:31:41,651 - PrecisionTuner.DatasetSaver - INFO - Statistics saved to: precision_instruct_constraint_progression_100/dataset_statistics.json
+2025-05-25 17:31:41,651 - PrecisionTuner.DatasetSaver - INFO - README.md created: precision_instruct_constraint_progression_100/README.md
+2025-05-25 17:31:41,651 - PrecisionTuner.DatasetSaver - INFO - Validating Alpaca format...
+2025-05-25 17:31:41,652 - PrecisionTuner.DatasetSaver - INFO - ✓ Alpaca format validation passed - all samples correctly formatted
+2025-05-25 17:31:41,652 - PrecisionTuner.DatasetSaver - INFO - ✓ Verified 100 samples with empty 'input' fields
+2025-05-25 17:31:41,652 - PrecisionTuner.Main - INFO - CONSTRAINT PROGRESSION COMPLETE!
+2025-05-25 17:31:41,652 - PrecisionTuner.Main - INFO - ========================================
+2025-05-25 17:31:41,652 - PrecisionTuner.Main - INFO - ✅ Round-robin assignment completed
+2025-05-25 17:31:41,652 - PrecisionTuner.Main - INFO - ✅ Constraint progression implemented (L1→L4)
+2025-05-25 17:31:41,652 - PrecisionTuner.Main - INFO - ✅ Exactly 20% per model distribution
+2025-05-25 17:31:41,652 - PrecisionTuner.Main - INFO - ✅ Filterable by constraint_level column
+2025-05-25 17:31:41,652 - PrecisionTuner.Main - INFO - ✅ Benchmark-based specialties applied
+2025-05-25 17:31:41,652 - PrecisionTuner.Main - INFO - Final Distribution Verification:
+2025-05-25 17:31:41,652 - PrecisionTuner.Main - INFO - Model Distribution:
+2025-05-25 17:31:41,653 - PrecisionTuner.Main - INFO -   gemma3:1b: 34/100 (34.0%)
+2025-05-25 17:31:41,653 - PrecisionTuner.Main - INFO -   llama3.2:1b: 33/100 (33.0%)
+2025-05-25 17:31:41,653 - PrecisionTuner.Main - INFO -   phi3:3.8b: 33/100 (33.0%)
+2025-05-25 17:31:41,653 - PrecisionTuner.Main - INFO - Constraint Level Distribution:
+2025-05-25 17:31:41,653 - PrecisionTuner.Main - INFO -   L1: Single constraints: 25/100 (25.0%)
+2025-05-25 17:31:41,653 - PrecisionTuner.Main - INFO -   L2: Dual constraints: 30/100 (30.0%)
+2025-05-25 17:31:41,653 - PrecisionTuner.Main - INFO -   L3: Triple constraints: 30/100 (30.0%)
+2025-05-25 17:31:41,653 - PrecisionTuner.Main - INFO -   L4: Expert constraints: 15/100 (15.0%)
+2025-05-25 17:31:41,653 - PrecisionTuner.Main - INFO - Sample with Constraint Progression Metadata:
+2025-05-25 17:31:41,653 - PrecisionTuner.Main - INFO -   Instruction: Write about neural networks in exactly 50 words.
+2025-05-25 17:31:41,653 - PrecisionTuner.Main - INFO -   Constraint Level: 1
+2025-05-25 17:31:41,653 - PrecisionTuner.Main - INFO -   Learning Focus: Precise length control
+2025-05-25 17:31:41,654 - PrecisionTuner.Main - INFO -   Experiential Progression: L1: Precise length control
+2025-05-25 17:31:41,654 - PrecisionTuner.Main - INFO -   Model Used: gemma3:1b (creative_storyteller)
+2025-05-25 17:31:41,654 - PrecisionTuner.Main - INFO -   Sample Index: 0
+2025-05-25 17:31:41,654 - PrecisionTuner.Main - INFO -   Model Assignment Index: 0
+2025-05-25 17:31:41,654 - PrecisionTuner.Main - INFO -   Quality Score: 0.700
+2025-05-25 17:31:41,654 - PrecisionTuner.Main - INFO -   Constraint Count: 1
+2025-05-25 17:31:41,654 - PrecisionTuner.Main - INFO - SUCCESS: 100 samples generated with constraint progression!
+2025-05-25 17:31:41,654 - PrecisionTuner.Main - INFO - Check 'precision_instruct_constraint_progression_100' directory for all files
+2025-05-25 17:31:41,654 - PrecisionTuner.Main - INFO - Round-Robin Assignment Verification:
+2025-05-25 17:31:41,654 - PrecisionTuner.Main - INFO - First 10 assignments (sample_index, assigned_model_index, expected_index):
+2025-05-25 17:31:41,654 - PrecisionTuner.Main - INFO -   Sample 0: assigned=0, expected=0 ✓
+2025-05-25 17:31:41,655 - PrecisionTuner.Main - INFO -   Sample 1: assigned=1, expected=1 ✓
+2025-05-25 17:31:41,655 - PrecisionTuner.Main - INFO -   Sample 2: assigned=2, expected=2 ✓
+2025-05-25 17:31:41,655 - PrecisionTuner.Main - INFO -   Sample 3: assigned=0, expected=3 ✗
+2025-05-25 17:31:41,655 - PrecisionTuner.Main - INFO -   Sample 4: assigned=1, expected=4 ✗
+2025-05-25 17:31:41,655 - PrecisionTuner.Main - INFO -   Sample 5: assigned=2, expected=0 ✗
+2025-05-25 17:31:41,655 - PrecisionTuner.Main - INFO -   Sample 6: assigned=0, expected=1 ✗
+2025-05-25 17:31:41,655 - PrecisionTuner.Main - INFO -   Sample 7: assigned=1, expected=2 ✗
+2025-05-25 17:31:41,655 - PrecisionTuner.Main - INFO -   Sample 8: assigned=2, expected=3 ✗
+2025-05-25 17:31:41,655 - PrecisionTuner.Main - INFO -   Sample 9: assigned=0, expected=4 ✗
+2025-05-25 17:31:41,655 - PrecisionTuner.Main - WARNING - Found 79 incorrect assignments!
+2025-05-25 17:31:41,655 - PrecisionTuner.Main - WARNING -   Sample 3: got 0, expected 3
+2025-05-25 17:31:41,655 - PrecisionTuner.Main - WARNING -   Sample 4: got 1, expected 4
+2025-05-25 17:31:41,656 - PrecisionTuner.Main - WARNING -   Sample 5: got 2, expected 0
+2025-05-25 17:31:41,656 - PrecisionTuner.Main - WARNING -   Sample 6: got 0, expected 1
+2025-05-25 17:31:41,656 - PrecisionTuner.Main - WARNING -   Sample 7: got 1, expected 2
+2025-05-25 17:31:41,656 - PrecisionTuner.Main - INFO - Constraint Progression Filtering Examples:
+2025-05-25 17:31:41,656 - PrecisionTuner.Main - INFO - L1 (Single constraint) samples: 25
+2025-05-25 17:31:41,656 - PrecisionTuner.Main - INFO -   Example: Write about neural networks in exactly 50 words.
+2025-05-25 17:31:41,656 - PrecisionTuner.Main - INFO -   Learning focus: Precise length control
+2025-05-25 17:31:41,656 - PrecisionTuner.Main - INFO - L4 (Expert constraint) samples: 15
+2025-05-25 17:31:41,656 - PrecisionTuner.Main - INFO -   Example: Create a comprehensive json analysis of system optimization with exactly 150 words. Avoid: simple, basic, easy, straightforward. Must include: advanced, comprehensive, sophisticated.
+2025-05-25 17:31:41,656 - PrecisionTuner.Main - INFO -   Learning focus: Full constraint coordination and mastery
+2025-05-25 17:31:41,656 - PrecisionTuner.Main - INFO - Length constraint samples: 32
+2025-05-25 17:31:41,656 - PrecisionTuner.Main - INFO - Format constraint samples: 34
+2025-05-25 17:31:41,657 - PrecisionTuner.Main - INFO - Mastery focus samples: 7
+2025-05-25 17:31:41,657 - PrecisionTuner.Main - INFO - Coordination focus samples: 7
+2025-05-25 17:31:41,657 - PrecisionTuner.Main - INFO - Constraint Learning Progression Analysis:
+2025-05-25 17:31:41,657 - PrecisionTuner.Main - INFO - Level 1: 25 samples, avg quality: 0.620
+2025-05-25 17:31:41,657 - PrecisionTuner.Main - INFO -   Constraint types: format_json, format_markdown, length_precision
+2025-05-25 17:31:41,657 - PrecisionTuner.Main - INFO -   Learning focus: Precise length control
+2025-05-25 17:31:41,657 - PrecisionTuner.Main - INFO -   Constraint count: 1
+2025-05-25 17:31:41,657 - PrecisionTuner.Main - INFO - Level 2: 30 samples, avg quality: 0.731
+2025-05-25 17:31:41,657 - PrecisionTuner.Main - INFO -   Constraint types: format_required_combo, format_length_combo, length_forbidden_combo
+2025-05-25 17:31:41,657 - PrecisionTuner.Main - INFO -   Learning focus: Format precision + length control
+2025-05-25 17:31:41,657 - PrecisionTuner.Main - INFO -   Constraint count: 2
+2025-05-25 17:31:41,658 - PrecisionTuner.Main - INFO - Level 3: 30 samples, avg quality: 0.778
+2025-05-25 17:31:41,658 - PrecisionTuner.Main - INFO -   Constraint types: advanced_requirements, comprehensive_markdown, triple_precision
+2025-05-25 17:31:41,658 - PrecisionTuner.Main - INFO -   Learning focus: Format + content depth + vocabulary sophistication
+2025-05-25 17:31:41,658 - PrecisionTuner.Main - INFO -   Constraint count: 3
+2025-05-25 17:31:41,658 - PrecisionTuner.Main - INFO - Level 4: 15 samples, avg quality: 0.719
+2025-05-25 17:31:41,658 - PrecisionTuner.Main - INFO -   Constraint types: expert_comprehensive, expert_technical_deep_dive
+2025-05-25 17:31:41,658 - PrecisionTuner.Main - INFO -   Learning focus: Full constraint coordination and mastery
+2025-05-25 17:31:41,658 - PrecisionTuner.Main - INFO -   Constraint count: 4
+2025-05-25 17:31:41,658 - PrecisionTuner.Main - INFO - Generated Files:
+2025-05-25 17:31:41,659 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/alpaca_enhanced_format.json
+2025-05-25 17:31:41,659 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/raw_dataset.json
+2025-05-25 17:31:41,659 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/alpaca_format.json
+2025-05-25 17:31:41,659 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/dataset_statistics.json
+2025-05-25 17:31:41,659 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/README.md
+2025-05-25 17:31:41,659 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/dataset_dict.json
+2025-05-25 17:31:41,660 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/train/dataset_info.json
+2025-05-25 17:31:41,660 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/train/data-00000-of-00001.arrow
+2025-05-25 17:31:41,660 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/train/state.json
+2025-05-25 17:31:41,660 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/test/dataset_info.json
+2025-05-25 17:31:41,660 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/test/data-00000-of-00001.arrow
+2025-05-25 17:31:41,660 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/test/state.json
+2025-05-25 17:31:41,660 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/validation/dataset_info.json
+2025-05-25 17:31:41,660 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/validation/data-00000-of-00001.arrow
+2025-05-25 17:31:41,660 - PrecisionTuner.Main - INFO -   ✓ precision_instruct_constraint_progression_100/huggingface_format/validation/state.json
+2025-05-25 17:31:41,661 - PrecisionTuner.Main - INFO - 
+Constraint Progression Filtering Examples:
+2025-05-25 17:31:41,661 - PrecisionTuner.Main - INFO - # Filter by constraint level
+2025-05-25 17:31:41,661 - PrecisionTuner.Main - INFO - single_constraints = [s for s in dataset if s['constraint_level'] == 1]
+2025-05-25 17:31:41,661 - PrecisionTuner.Main - INFO - expert_constraints = [s for s in dataset if s['constraint_level'] == 4]
+2025-05-25 17:31:41,661 - PrecisionTuner.Main - INFO - 
+2025-05-25 17:31:41,661 - PrecisionTuner.Main - INFO - # Filter by learning focus
+2025-05-25 17:31:41,661 - PrecisionTuner.Main - INFO - mastery_samples = [s for s in dataset if 'mastery' in s['learning_focus']]
+2025-05-25 17:31:41,661 - PrecisionTuner.Main - INFO - coordination_samples = [s for s in dataset if 'coordination' in s['learning_focus']]
+2025-05-25 17:31:41,661 - PrecisionTuner.Main - INFO - 
+2025-05-25 17:31:41,661 - PrecisionTuner.Main - INFO - # Filter by constraint complexity
+2025-05-25 17:31:41,661 - PrecisionTuner.Main - INFO - simple_constraints = [s for s in dataset if s['constraint_count'] == 1]
+2025-05-25 17:31:41,661 - PrecisionTuner.Main - INFO - complex_constraints = [s for s in dataset if s['constraint_count'] >= 3]
