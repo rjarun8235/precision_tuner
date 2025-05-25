@@ -1,8 +1,3 @@
-"""
-Updated Dataset Generator - 3 Models Constraint Progression + Round-Robin Assignment
-Combines experiential constraint learning with 3-model assignment
-"""
-
 import json
 import random
 import numpy as np
